@@ -13,6 +13,18 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    NSString *writeKey = @"";
+    NSString *endPointUrl = @"";
+    
+    RudderConfigBuilder *configBuilder = [[RudderConfigBuilder alloc] init];
+    [configBuilder withEndPointUrl:endPointUrl];
+    RudderClient *rudderClient = [RudderClient getInstance:writeKey config:[configBuilder build]];
+    
+    RudderMessageBuilder *messageBuilder = [[RudderMessageBuilder alloc] init];
+    [messageBuilder setEventName:@""];
+    [rudderClient trackMessage:[messageBuilder build]];
+    
     return YES;
 }
 

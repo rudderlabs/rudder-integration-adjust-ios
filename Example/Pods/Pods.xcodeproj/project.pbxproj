@@ -1,0 +1,1952 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 656BD4AA469276F0CF2BEA2C62F6B22B /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DD91E695ACD83382148BAFB029504F /* RudderOSInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 7700E2CD4F436398D4665121CD32A74D /* RudderOSInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		010911A7D5BBA27B8656E3D7F63C2D3C /* ADJEventSuccess.m in Sources */ = {isa = PBXBuildFile; fileRef = BE18D6AB76C0386DD06577371381E96B /* ADJEventSuccess.m */; };
+		02BDA11D9F998FAB3A99FDB170E543A9 /* NSString+ADJAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 391B4B25AB704FDDC67A6C71FD70F1EF /* NSString+ADJAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07EBC135DE145B494F9232E2CD99453D /* RudderNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 1754D857F64121342AE347D593B90587 /* RudderNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C2AFC2D62D226E59FA6B384D5043E01 /* RudderMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA5F850B883DE1207EC018F72BF3C87 /* RudderMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D144EEBB66468F0CA10F0F09026E100 /* RudderServerConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C4CA2886CB77648E82323DA4F592FB9C /* RudderServerConfigManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E1077B8977F88A11FB12E1BA0374D5E /* RudderLibraryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6167A94B43412297529F98C375D78676 /* RudderLibraryInfo.m */; };
+		10DA42A933665650494084EE7C2919F0 /* RudderClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 9728045CE18C80623E1BEC6C2DD69D35 /* RudderClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 248800D16B2232C4D64F44AF357962D6 /* UIApplication+StrictKeyWindow.m */; };
+		12CF310C1F22F9158A3556519F4A79E6 /* RudderMessageBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AC748F7092962A66624D9126BF3B2D9 /* RudderMessageBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 9500371F36C765E6AAC4D6A5DBF3B302 /* UIImage+Diff.m */; };
+		14C511527597E5846AB2627F791C7D8E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294647104E5033F445722ED5708CE30F /* QuartzCore.framework */; };
+		174D325F46BB3CEA4DA23E9C025985FE /* ADJEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4445D3841B1877704DA1F048DA21882F /* ADJEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1830D4357682B70842549F8911BCFFDD /* RudderTraits.m in Sources */ = {isa = PBXBuildFile; fileRef = 489F6A700769BA5F2683C35AA412253C /* RudderTraits.m */; };
+		184C08934D13EB938B8AAB5087FD7722 /* Pods-Rudder-Adjust_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750A7B25F71E87D4138A6A6C6A806DD /* Pods-Rudder-Adjust_Example-dummy.m */; };
+		1929BFB56C84CEB7E526A0AC7962B611 /* RudderTraitsBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2485CC4E5FF994A2BCEA75FE9FA7591E /* RudderTraitsBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19F68EBC195CF4E1DAC92296F8E65AD0 /* ADJAttributionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA2A3395A0E0B4E0AC6FE2044CF4CE3 /* ADJAttributionHandler.m */; };
+		1A31A6DA04CFB9C083103252B1ABF56D /* RudderContext.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDE7B26D0C4A25CBAC554A996050C79 /* RudderContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B747006FEDBA64A9328F76168EB79A0 /* ADJLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 847CAA659B1DECEF61AAF859CB452D70 /* ADJLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C81A1F55A21CC572A162D5BC4EAACB0 /* ADJSessionFailure.h in Headers */ = {isa = PBXBuildFile; fileRef = C58630AD1A0256C9C0A64EEEF58E0754 /* ADJSessionFailure.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2203456A6042275DF2635160D4189D8E /* TrackPropertyBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 22414C3B6C106C74CD57F0833F6F8F21 /* TrackPropertyBuilder.m */; };
+		226E97722A9B99C57479300D6356002C /* ADJSessionFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514281E7286D462A2072B8D19FC12CB /* ADJSessionFailure.m */; };
+		24AE9D72FF05596A5914BC4F73FBB422 /* ADJAttribution.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BD8A4D464078DAF8138952BAE54426 /* ADJAttribution.m */; };
+		285BDB070401CD2261925C941D2160A8 /* ADJRequestHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = EFDD174D577D697F8C61633FB3435A1C /* ADJRequestHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BFA0C4034D4C86B8CBEDAEB87DC6230 /* RudderTraitsBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 575FEC9C8978EB523101C8F2FB1B93B2 /* RudderTraitsBuilder.m */; };
+		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3F0AE2AC90FC520C00B8A4D086C6A3 /* UIImage+Compare.m */; };
+		2DF6AA00B89CD2EF3A30C5F513D96804 /* RudderLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 7570CC2A6508F85087FE83808E88F1C1 /* RudderLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E0B82C53C0A4E7FF5CA8ABC4712C382 /* RudderDBMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F65AD8A2FC43D0579FC4589E29B471F8 /* RudderDBMessage.m */; };
+		2FBC39B55763C92F1588D772AFA68362 /* ADJActivityPackage.h in Headers */ = {isa = PBXBuildFile; fileRef = E80124F5E429B06ADCBAAE3F5B3A9722 /* ADJActivityPackage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3022C24F7EC1B241C8DF105EDFB4E875 /* RudderMessageBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC352B939BDD7E9AB464709FE3716AA /* RudderMessageBuilder.m */; };
+		3041DCBDBEEA927A194E669C625B3FC6 /* ADJSdkClickHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 18C77C8E70E970E1C5794ED5EAB41B1A /* ADJSdkClickHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3055D548555C6342C54B17E6C8522180 /* PagePropertyBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD80A0D8E0BD5093AC51D6CA10B5EDA /* PagePropertyBuilder.m */; };
+		325EEAC0C73B819D61B58A00B595F270 /* RudderLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E241F132FA48F43057732D1DF124D0 /* RudderLogger.m */; };
+		3311A90BD931B45D68BB279B9F1ED514 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE548EA4A5173E4EE504BCB569DE46 /* Utils.m */; };
+		332F5EDA848C0EAB12748AD5CF72C2D8 /* ADJDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 414B922045CD4AD5A7950EC826BF49A1 /* ADJDeviceInfo.m */; };
+		379FBFCB1508B752A17E76A2E5681B4A /* ADJTimerOnce.m in Sources */ = {isa = PBXBuildFile; fileRef = F8193512EF0B4C82CF2B352CAAEE5140 /* ADJTimerOnce.m */; };
+		3A8D10AB2094968B2D967C7617F54E59 /* ADJActivityHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BD91FE9417E5EA6D8D9292A180842D1D /* ADJActivityHandler.m */; };
+		3E25E4A1B2832B5DA4D7B56C008AF525 /* Pods-Rudder-Adjust_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C9A6B136A4E08D9CAACD03BAAE29FF1 /* Pods-Rudder-Adjust_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E2B01F18859B8428D7C2D6E80B71D23 /* RudderServerConfigSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B54E3BA3E9EE771C3132B83F7E6F452 /* RudderServerConfigSource.m */; };
+		3E68CB804A634E04A0E7DEBA1CD0C4B7 /* Adjust-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 101F57751AB76F948DFFBEA0A37F83B1 /* Adjust-dummy.m */; };
+		3EDFF75AD1CCDE41184A00DF7D560C64 /* ADJAdjustFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CFB31428DC9B6C603F38FA120520F7 /* ADJAdjustFactory.m */; };
+		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 8586BD1A675916F0FBCFC2B4099A8C92 /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		413990FC5955F60D9D6EF3CEBF4A6B7E /* RudderAdjustFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 686D1B7EE09BF86FFD9E910E1A1ABAC5 /* RudderAdjustFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44B44C782D6CED56F96AF992078FD9D5 /* ADJActivityState.m in Sources */ = {isa = PBXBuildFile; fileRef = E85094FBE4E077E1D38419CFD5233E79 /* ADJActivityState.m */; };
+		45FB5E9913871B35BB55E8B853E7E3DE /* RudderAdjustFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F85981D1647FA958F6DC5888BA95328 /* RudderAdjustFactory.m */; };
+		47773D0737E0832A4694F56B12491A34 /* ADJActivityKind.h in Headers */ = {isa = PBXBuildFile; fileRef = A25790B8A589315EA89F24E2F04A64B5 /* ADJActivityKind.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B4E0E2BAE2170D2D93FC980334DD272 /* NSString+ADJAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F32AD9E8550D5FC49DEC8814DC337DBA /* NSString+ADJAdditions.m */; };
+		4C154E6615DD1F11E9B18C6CDDC4425F /* ADJEventFailure.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ECADA5A58F6C4E570B8FC21F03F4796 /* ADJEventFailure.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C72DD32F7D77104EBC63DACDD2FDDD5 /* Pods-Rudder-Adjust_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15BC96BE2160BD51D45198F7679E3CBE /* Pods-Rudder-Adjust_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FA859BCB168911CF59D5B8482B5BBE5 /* ADJConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = F897DD8EF196EE7708C381E11B22465D /* ADJConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50A48ED6AAF4FC26553CC0299034C07C /* UIDevice+ADJAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D0EF19CA1F93AA65652726F764DA09 /* UIDevice+ADJAdditions.m */; };
+		50F51CA8A20221CE4EFEEB3FD4EBB700 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF99364A9E7DEE89A265C91CBBDE54A9 /* SystemConfiguration.framework */; };
+		5284B31C8811FAE0AFF75E0E461A8A5B /* ADJActivityState.h in Headers */ = {isa = PBXBuildFile; fileRef = 93F9739241D14E13B309FE004A7D10ED /* ADJActivityState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55E6F9A8E9FFA29A004ACCD7CB591C3F /* ADJUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C891A8B44ACDB37F11718366984B20 /* ADJUtil.m */; };
+		582B5377967C396ECEF49413402CC926 /* ADJEventFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = C43ABC043F0BD70A23ABA224025E4A1A /* ADJEventFailure.m */; };
+		5872AFFA287D01A293D36F46D869AA57 /* ADJAttribution.h in Headers */ = {isa = PBXBuildFile; fileRef = 21A748792986870DC981EFED45937D34 /* ADJAttribution.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59C6FFEA65AD9E9261F38A2EE455840B /* RudderApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 953BF9D42644C748FDE89C50FE36765D /* RudderApp.m */; };
+		5B33997370AC1D4FDF90E3C37DEDC0D6 /* RudderLibraryInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B3E730FF29BB5D84387D571F10A95106 /* RudderLibraryInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C5AA585E01E935C3D98B7EECD0CCC78 /* RudderContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B212CB81A9876D11100F7BFC2AF74ED /* RudderContext.m */; };
+		5D92DF7BAC7F6FB111821514BD3BF698 /* RudderServerConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB43A3A790B02D5CD5A2DB3DBDC792C4 /* RudderServerConfigManager.m */; };
+		621D5C9CA735BD36748A3543C5D0F7DB /* RudderElementCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FF6D178DA8EFD2CCC37C2C836BB936C /* RudderElementCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		624CA20EB71DAD99FDAE547EE23B603E /* RudderSDKCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 307958453298A3CCDDA8DD45C6B80388 /* RudderSDKCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6698A47376852D6B8704E013922D739B /* RudderMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7BFA04FC95D8E4111AC058DFE63226 /* RudderMessage.m */; };
+		67BA23C1017955A2D8625DB3CEF1D246 /* RudderNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E594C379FB5E09E0E01FCB3B5C3C99F /* RudderNetwork.m */; };
+		6AE239C5D116E1C06F5705699FB9EAF0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAE8DF231EF2B627862B609C069D129 /* XCTest.framework */; };
+		6CA7FFD5D374E36C8BB101E536027483 /* RudderOption.h in Headers */ = {isa = PBXBuildFile; fileRef = 52304E26E1A368578B04385BCB8FF8B0 /* RudderOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D9005FF8BEF1B0ED3D5F01FAB842341 /* RudderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E1A99A6801E993FF3ADDDFEE6816B4FA /* RudderConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D364F540A41966B217DFEE9E7CC809 /* FBSnapshotTestCase-dummy.m */; };
+		74D9BC853A754F4C3764879C10E75A95 /* ADJUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 138EAF75ABD721DC9CE9ABC65BE019D3 /* ADJUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76683D9A540C37369E6F991FCAF16AF7 /* Adjust-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A1D25E6F79453C44316C40940B3A2C6 /* Adjust-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79C18FD271B1405EC0C5652CA1B29DD4 /* ADJResponseData.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5C1F4A2C1FCE2DDC7CCEB9D05864C3 /* ADJResponseData.m */; };
+		7B179521CB7B8F4C72B0125CFA9E0B0A /* RudderTraits.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DBFD261CDC6F31570E36333535F99C6 /* RudderTraits.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C800215F77DC9935E79A16382E91A30 /* RudderServerDestinationDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = C61E74FB22F32DA31F2D51D7ED573C46 /* RudderServerDestinationDefinition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82528F52713D54B19AE6E884DE0691B7 /* ADJConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E20488311AF50DE1DD2068A08EE1225C /* ADJConfig.m */; };
+		83AA1583D8D6FF0EB3CEF3BA562B0FDD /* NSData+ADJAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 418FA3586F10DB93BE07B41ED1498085 /* NSData+ADJAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85145E38D77EBAF5A0D41C2734506626 /* RudderSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 810C646160D7DB85560AC068094D499D /* RudderSDKCore.framework */; };
+		86ACEDB769C3309B1762D56B53FBBAA4 /* ADJActivityHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 65AF27E799FEFAB6CB5CED9D5389406C /* ADJActivityHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2760AC413FB3FDB2A2149CBAC100F496 /* FBSnapshotTestController.m */; };
+		888C9FD1802AB7DA3B32963C193E124E /* RudderOption.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC8A8F818E7F7A2A7B9217E87EDBD35 /* RudderOption.m */; };
+		8CBC1F8492AC0AC1E88A94D442D523F8 /* Adjust.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07021B00CBFB5B859AE536ABF25FDB1 /* Adjust.framework */; };
+		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC7FB8344A60D87388CB18793128182 /* FBSnapshotTestCase.m */; };
+		8DCE45273C6EFE1514D416CF2E8F4C40 /* RudderDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948652A19463DE82775BFA407B0CB3A /* RudderDeviceInfo.m */; };
+		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C4451C5F5D7D8CD16D330935AC04CE6 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94E5C15D7F83B6CFC718CFA6D46876E5 /* ADJPackageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 057CD36C256F44ECB77D812FF1A93FBC /* ADJPackageHandler.m */; };
+		95E09AA44FF0BF248EB9BD22F2E6F7F4 /* ADJAttributionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A0A7B20417D61F806C554AF6B231DCE0 /* ADJAttributionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9814B9ADB66311A286A8A7147813A56B /* ADJKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 746D1C24A31AD5C877DE21495CE8F1C4 /* ADJKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		981D6E28F469698DABD916558DE80821 /* Rudder-Adjust-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C9153230D0AC57C03C4EBE34B5EDC1 /* Rudder-Adjust-dummy.m */; };
+		98B9CBEAE54472168DD4FA21EC99C13A /* RudderIntegrationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 81027FC59131A9F626DDB464EB229475 /* RudderIntegrationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98BBE026EDDEC493251328E2278ABD49 /* ADJTimerCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C89B589FEEFD2B4730BCB285EE5F3EF /* ADJTimerCycle.m */; };
+		998654E361066C42CF5113A4D33D7A48 /* RudderConfigBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B27BF101FC5F7A85593E373095F2FA /* RudderConfigBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A05B7A2B731E9A609A5CC3AF2E30847 /* RudderSDKCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E9DA210B3355130ACB1361E9E155346 /* RudderSDKCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A5549DBAD5667BE32A816DE91CBE8F6 /* ADJPackageBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4F4DC7C9AAA851F9701491E466E2D8 /* ADJPackageBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B66C253E9F7F8B1E6291552FD0CA641 /* PagePropertyBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = D65C1012A1FA4F681AD7B068D29F39AE /* PagePropertyBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BE29AA177BC51E94A517CF0094A1DDA /* ADJResponseData.h in Headers */ = {isa = PBXBuildFile; fileRef = EBB403873F9A64B31E35B0C7DD74156C /* ADJResponseData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CE4FFA0AAA905297A8B93B0B1FB5170 /* RudderServerConfigSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 545A71F253920860E8BFFEFF27B5B0F0 /* RudderServerConfigSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D0B673A397E12EC45EA0E0E17D00F5C /* ADJPackageHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0225BF7A71E23CFCCB6F2887471DDA23 /* ADJPackageHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02F70CAEE07BD68EA0549B939CFF959 /* SwiftSupport.swift */; };
+		A04BF4EF05201D2E8E63288B67FACB74 /* ADJSessionParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = C370B7EBF719ACDE477E094BED7B41D3 /* ADJSessionParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2696237C7BDF2A95E2F206CBCA14FB6 /* ADJLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 667922B1BD3F199974A3A00E106AF0FB /* ADJLogger.m */; };
+		A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FCB61F456CDC153E3D0FEED10548D3 /* UIImage+Snapshot.m */; };
+		A556AA73836B04A690D9828D113795D7 /* RudderAdjustIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = 288227B695F0FE49D6DB06CAC0134093 /* RudderAdjustIntegration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A57D2D6360F8D0C1F7C4A8880BDD7A2A /* ADJReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DC6F5F3A5233E60FD17EE17C1F917AF /* ADJReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A68C400BB1591F121A8524FE268D3E5B /* RudderDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 25BF8FF82FDE6A566D42C2D05B9CDE00 /* RudderDeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB87D3BA8C09ABE3EECAEFAE9820ABC4 /* RudderServerDestination.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B2CB8599D7A31CF37B76E7816EA928 /* RudderServerDestination.m */; };
+		AD73E52D9318720CC1125B1BE11632A3 /* Rudder-Adjust-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BDAC2F058010D3FA548B98F038759E4 /* Rudder-Adjust-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B149C57609E01A346371700A32C72E89 /* NSData+ADJAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A6B556CECD6820A0326F4D6A8945A6 /* NSData+ADJAdditions.m */; };
+		B25D795BDC4F426BC01EFC911F368B81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5097DD022F2EF8F2D9759BB7DD62F8 /* Foundation.framework */; };
+		B5123BF8E6D64C6E3ED06B2510FEAA92 /* ADJBackoffStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 88E75822721F1C0E3DB1CA0F63CB52C5 /* ADJBackoffStrategy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B587F8FDE21D60FB0F77EB0CB0E52ADD /* ADJSessionParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = A36C5216CD788996B6801F2DE1CA2E93 /* ADJSessionParameters.m */; };
+		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 317E8AF0FB45BCAE1ECB5B600A1C4B08 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B9DBF86382D5088F06AAE48881181615 /* RudderServerDestination.h in Headers */ = {isa = PBXBuildFile; fileRef = 59F7668EC3A982278AB2A779A9FBBA4D /* RudderServerDestination.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDB9C5C5C017EC3AAE8F278F842906FD /* ADJEventSuccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DEEE14B2FD824A8E03567B3FBD72DC2 /* ADJEventSuccess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF79672EC6D1C790FC4422275EE9E709 /* RudderSDKCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4960E98136CECBF4CDB19059E5F72AB0 /* RudderSDKCore-dummy.m */; };
+		BF9D9565E9273A4188F5C37AFE443194 /* ADJAdjustFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = FAD9C702656BE5E0D3FEE5D3BBE662D6 /* ADJAdjustFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0D5D64FBB8DFED7F4E6331B129E5F3C /* RudderIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = 5999CF5CB11C1FFB8F8E58405E200440 /* RudderIntegration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C408BB878D86A7A8FEBAAC428EC131F1 /* ADJEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F132D11529FC5411237D62FFC6B8AF53 /* ADJEvent.m */; };
+		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = F8AD0F57951B2544C2EF271ECC29D393 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4B6E011D79A4FEB68BC7A8058D423F2 /* RudderElementCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4146395BA931933DBC2D197A523442 /* RudderElementCache.m */; };
+		C524B9FD5E01300A382DDCDBBDCC0D1D /* RudderScreenInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C2E43EB42F004D8A5928FC787C0459 /* RudderScreenInfo.m */; };
+		C6C778A1D15EA9979B3B461B8C19F8E7 /* Pods-Rudder-Adjust_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6124FABE08539D9FA18D6A40BBAB123F /* Pods-Rudder-Adjust_Tests-dummy.m */; };
+		C898C810E18A8968B6DFDD2AA30F0011 /* RudderScreenInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = ED7F21A4E2211393513FC87A3F9779BA /* RudderScreenInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9180B057FCD87964E58D80F25ED18E7 /* ADJActivityPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9766A39739388D56867F2639B07583 /* ADJActivityPackage.m */; };
+		C9E206C7A5D1DDD69EB4E393FA713F9F /* ADJSessionSuccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AE725D9E5D7DB8FF7A2090E8FF643EA /* ADJSessionSuccess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB6A66E9D1D0673C8CE146AE8F6379D7 /* RudderOSInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A875FAF31DFCE4EBCFA1B3EF65D35FC /* RudderOSInfo.m */; };
+		CB950BE2EDEE6E5B3660427E053E7661 /* RudderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FB842AF8C0EA2EAC874A1DF3F7F181BF /* RudderConfig.m */; };
+		CDAA23A0E0748625A5FBA22199C7C7AE /* RudderProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 513EE66B3A184A548D618917A6ACD77E /* RudderProperty.m */; };
+		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D99ED3CD498A6D6209E50528A3ACC2C /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D1A36274A2234065D31409889C45BD29 /* RudderClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 570E82A642070E92EACD3928F6393238 /* RudderClient.m */; };
+		D3671634F0E0F028E24725ACB4F288AB /* ADJPackageBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD9D0094EE7987B213C74BB3AF2542C /* ADJPackageBuilder.m */; };
+		D4754369A1E587E4553C0456F34295F8 /* ADJTimerCycle.h in Headers */ = {isa = PBXBuildFile; fileRef = 42844D7D5A27B7042BA166485903B038 /* ADJTimerCycle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4BCBB7FC8A812EBA8AA014327A3CAE8 /* ADJSdkClickHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5DB9DAE501C8E106B36C0C6D862164 /* ADJSdkClickHandler.m */; };
+		D4F1CFED89BA5D3A3711CC9EDE7C9D71 /* EventRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 4226E0E6093E68816506B66582D2D559 /* EventRepository.m */; };
+		D87330F0F0AE7B1680D5335F637A3FDC /* ADJReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B2C36B4FEC0227454AB5BB42EF26D /* ADJReachability.m */; };
+		DCC1959CFC6E27E20DFCB98600A6372B /* RudderAdjustIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FD3E4083AAECCDCA6BDA8056B2357E /* RudderAdjustIntegration.m */; };
+		DEB7E57B96CC352C4A9CD9D95FED7035 /* DBPersistentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B34EF541ECCD74E172B1A799020E4318 /* DBPersistentManager.m */; };
+		DEF797DD98FEA5D153AA7E3A15A1F4C8 /* ADJTimerOnce.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F8F87B489CA8A8C478E918BF05674EE /* ADJTimerOnce.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF12034B15E6D7C809BAF1624BBB72C7 /* RudderServerDestinationDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = C521E4F7F2BFEBD6E7AF4453A34D251B /* RudderServerDestinationDefinition.m */; };
+		DF7A440F3B508F0AAA9230641FD8BF95 /* ADJSessionSuccess.m in Sources */ = {isa = PBXBuildFile; fileRef = F65CAA7B8420260E4636ECDDC89B50B0 /* ADJSessionSuccess.m */; };
+		E02BDC91C5C00B3869917AFA0D7D6CDE /* ScreenPropertyBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = EAD4ADB9F4E55D6DE198803C6446B5BA /* ScreenPropertyBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0B8D095C732352C854D365B9E5B993D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D96BA20EFACFA6CFCD77BD698BA26A9 /* UIKit.framework */; };
+		E28854483B2EA4AB9691917BE93EFBF3 /* ADJKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE64A81FD310D72F92E0BCCCE2C7EC2 /* ADJKeychain.m */; };
+		E3A7455477EB0E703DD065FBA0C3423C /* ADJUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = D7B00C932FD5BBCC457CA8D2AAAAC453 /* ADJUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E47E06AE669F3A1230278D8325F7E258 /* ADJUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA7A6B73F45DEC899A8ADEE6C87A722 /* ADJUserDefaults.m */; };
+		E5210B58DAB223D5FB49283C8312EFEE /* RudderProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CB0EFBB59E14C25DFB163F381822F59 /* RudderProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5AECC85A7126C1901FCDACA2580ECE8 /* RudderApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C2FE40CD46598B111ED46B39A3EECF /* RudderApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5FFD0B62F5F724D178FE223DE3F6772 /* EventRepository.h in Headers */ = {isa = PBXBuildFile; fileRef = 654A977A98DE9B594994AA7336B3F59C /* EventRepository.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B237451A57C1BB843EF5CBB548ACDD /* Adjust.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6F86169B2C59270562609C9B790677 /* Adjust.m */; };
+		E6F523BDF4336FFBBC0E07A4E0769126 /* DBPersistentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 59EC3D6712FED364CB22689EFED7B9CD /* DBPersistentManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7E25E020C2EF59DD4ED6B78EF8FB262 /* TrackPropertyBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = A53FEA019E30ADB6DD4D87FA5C771740 /* TrackPropertyBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAADE7BECFA016B586201BE4852C645 /* FBSnapshotTestCasePlatform.m */; };
+		E8D299110B1F2D1B6F081A071209AE84 /* ADJSystemProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = B00D690F0ECCFDBE9FE17C53C07C1FB0 /* ADJSystemProfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA7554E304D1C764D09220608B84DAF8 /* ADJBackoffStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB038FB76C7705CC729854A8DEA44D75 /* ADJBackoffStrategy.m */; };
+		EC4EB6EBEEFD05961D5810B29BA04404 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5097DD022F2EF8F2D9759BB7DD62F8 /* Foundation.framework */; };
+		EC938E3447D6A86129F5E9939452FE14 /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD90418FDFFF78ADF7E1D05899FA0F4 /* Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECD7FD9E4EA65BFDD40E84204F65E114 /* UIDevice+ADJAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E19CAB7BB2BF64AC21F9BDB951030AA1 /* UIDevice+ADJAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE5CC8DA3E2D33C11B8713E7EF5E2D60 /* ScreenPropertyBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F33FB4CDD6F93E601EEA1B3C9F445A /* ScreenPropertyBuilder.m */; };
+		EEF03BD7610ED82A5AF1E8DD79304CE1 /* RudderDBMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = AA37BCDFF41814355FA0326257BBAF8F /* RudderDBMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1801DBC94B17BA0E577839DE529B113 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5097DD022F2EF8F2D9759BB7DD62F8 /* Foundation.framework */; };
+		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD0895B8262826A5A6D1BB0BA1C438F /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F4A8BCDF6BBC2E5DD95799055601158D /* ADJDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B5C98769F213E69891B241AA70B0CA9 /* ADJDeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F716C06AC087EB66557243DDE326F0BA /* ADJRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC65387E8E18904CF33A51D81E50FDD /* ADJRequestHandler.m */; };
+		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70A2259014B14B43E4D7F4D242C7F639 /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F740E256B7328388A03F7F5F0365F93A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5097DD022F2EF8F2D9759BB7DD62F8 /* Foundation.framework */; };
+		F8ED7FE64AC64F816DB34DB544E16472 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5097DD022F2EF8F2D9759BB7DD62F8 /* Foundation.framework */; };
+		F9D87441A0D5016E5AA5123A43757A7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5097DD022F2EF8F2D9759BB7DD62F8 /* Foundation.framework */; };
+		FAEE209AB39B2930F07660F11E4B8EA9 /* Adjust.h in Headers */ = {isa = PBXBuildFile; fileRef = D122698681C387B3C34B7FB33FD43CD5 /* Adjust.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB3D6264DD0E3566713B8698B141A1A4 /* ADJActivityKind.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDFA40994C3EE46895B8F4348D59F29 /* ADJActivityKind.m */; };
+		FD4D860955C21A24E58A1ABB8BF5A195 /* RudderConfigBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A554CD0CD2362074B0B6C4398C937F8 /* RudderConfigBuilder.m */; };
+		FDA571808883946A9292A09238134909 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89BC1D4460507EFACE5D0D03079B5C /* ReplaceMe.m */; };
+		FE957645BF3D3FFC5A5477490AC04CE3 /* ADJSystemProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = D62AD34611102CE28BCA586AF05D5F83 /* ADJSystemProfile.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		137DE94F0F5AB7BA75BB7F2762C8E27D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7111F362EA0D14BECD8B96EA1EAA5F79;
+			remoteInfo = Adjust;
+		};
+		63AB0A0E4017BF73B6C9832029A22CCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7111F362EA0D14BECD8B96EA1EAA5F79;
+			remoteInfo = Adjust;
+		};
+		A7CED9FD96A7D934D000038CD118D136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B25295473208069C86562546955EA53A;
+			remoteInfo = "Pods-Rudder-Adjust_Example";
+		};
+		C7621F965670D551099E0772D39118BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4244B316F94491A5B8E235C25A80263;
+			remoteInfo = RudderSDKCore;
+		};
+		C853A2B5ED77FDF1B7DC2AA0042A68DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
+			remoteInfo = FBSnapshotTestCase;
+		};
+		D44A511C0E112D23B21014F39CD9E5FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4244B316F94491A5B8E235C25A80263;
+			remoteInfo = RudderSDKCore;
+		};
+		FCFBA54DA2D19D54C8ED0D3FE3ED6252 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAC7AD417BF0B88718D4F4F275A6096C;
+			remoteInfo = "Rudder-Adjust";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0225BF7A71E23CFCCB6F2887471DDA23 /* ADJPackageHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJPackageHandler.h; path = Adjust/ADJPackageHandler.h; sourceTree = "<group>"; };
+		048B2C36B4FEC0227454AB5BB42EF26D /* ADJReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJReachability.m; path = Adjust/ADJReachability.m; sourceTree = "<group>"; };
+		057CD36C256F44ECB77D812FF1A93FBC /* ADJPackageHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJPackageHandler.m; path = Adjust/ADJPackageHandler.m; sourceTree = "<group>"; };
+		05C891A8B44ACDB37F11718366984B20 /* ADJUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJUtil.m; path = Adjust/ADJUtil.m; sourceTree = "<group>"; };
+		072E2EAC90AE3936E6E8C04051EAF10C /* RudderSDKCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RudderSDKCore.modulemap; sourceTree = "<group>"; };
+		0ABBADF0DFD82B341DE122EA3CE3804C /* Pods-Rudder-Adjust_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rudder-Adjust_Example.release.xcconfig"; sourceTree = "<group>"; };
+		0F7EA8191E6BB7BBD835694E80D0CBB0 /* Rudder-Adjust.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "Rudder-Adjust.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		101F57751AB76F948DFFBEA0A37F83B1 /* Adjust-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Adjust-dummy.m"; sourceTree = "<group>"; };
+		138EAF75ABD721DC9CE9ABC65BE019D3 /* ADJUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJUtil.h; path = Adjust/ADJUtil.h; sourceTree = "<group>"; };
+		15BC96BE2160BD51D45198F7679E3CBE /* Pods-Rudder-Adjust_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Rudder-Adjust_Tests-umbrella.h"; sourceTree = "<group>"; };
+		1754D857F64121342AE347D593B90587 /* RudderNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderNetwork.h; path = RudderSDKCore/RudderSDKCore/RudderNetwork.h; sourceTree = "<group>"; };
+		18C77C8E70E970E1C5794ED5EAB41B1A /* ADJSdkClickHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJSdkClickHandler.h; path = Adjust/ADJSdkClickHandler.h; sourceTree = "<group>"; };
+		19D16AD891E0C541E972F47E66D0ECB7 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		1AC748F7092962A66624D9126BF3B2D9 /* RudderMessageBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderMessageBuilder.h; path = RudderSDKCore/RudderSDKCore/RudderMessageBuilder.h; sourceTree = "<group>"; };
+		1E4146395BA931933DBC2D197A523442 /* RudderElementCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderElementCache.m; path = RudderSDKCore/RudderSDKCore/RudderElementCache.m; sourceTree = "<group>"; };
+		1F22552ED0FEBE4FB51E2E7FC7449950 /* Rudder-Adjust.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Rudder-Adjust.xcconfig"; sourceTree = "<group>"; };
+		1F8F87B489CA8A8C478E918BF05674EE /* ADJTimerOnce.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJTimerOnce.h; path = Adjust/ADJTimerOnce.h; sourceTree = "<group>"; };
+		20B27BF101FC5F7A85593E373095F2FA /* RudderConfigBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderConfigBuilder.h; path = RudderSDKCore/RudderSDKCore/RudderConfigBuilder.h; sourceTree = "<group>"; };
+		21A748792986870DC981EFED45937D34 /* ADJAttribution.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJAttribution.h; path = Adjust/ADJAttribution.h; sourceTree = "<group>"; };
+		22414C3B6C106C74CD57F0833F6F8F21 /* TrackPropertyBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TrackPropertyBuilder.m; path = RudderSDKCore/RudderSDKCore/TrackPropertyBuilder.m; sourceTree = "<group>"; };
+		23FCB61F456CDC153E3D0FEED10548D3 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		2485CC4E5FF994A2BCEA75FE9FA7591E /* RudderTraitsBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderTraitsBuilder.h; path = RudderSDKCore/RudderSDKCore/RudderTraitsBuilder.h; sourceTree = "<group>"; };
+		248800D16B2232C4D64F44AF357962D6 /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
+		25BF8FF82FDE6A566D42C2D05B9CDE00 /* RudderDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderDeviceInfo.h; path = RudderSDKCore/RudderSDKCore/RudderDeviceInfo.h; sourceTree = "<group>"; };
+		2760AC413FB3FDB2A2149CBAC100F496 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		288227B695F0FE49D6DB06CAC0134093 /* RudderAdjustIntegration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderAdjustIntegration.h; path = "Rudder-Adjust/Classes/RudderAdjustIntegration.h"; sourceTree = "<group>"; };
+		294647104E5033F445722ED5708CE30F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		29E241F132FA48F43057732D1DF124D0 /* RudderLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderLogger.m; path = RudderSDKCore/RudderSDKCore/RudderLogger.m; sourceTree = "<group>"; };
+		2BC7FB8344A60D87388CB18793128182 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		2C5DB9DAE501C8E106B36C0C6D862164 /* ADJSdkClickHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJSdkClickHandler.m; path = Adjust/ADJSdkClickHandler.m; sourceTree = "<group>"; };
+		2E594C379FB5E09E0E01FCB3B5C3C99F /* RudderNetwork.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderNetwork.m; path = RudderSDKCore/RudderSDKCore/RudderNetwork.m; sourceTree = "<group>"; };
+		2EA967F3BD44951CC3399024E768296B /* Pods-Rudder-Adjust_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rudder-Adjust_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		307958453298A3CCDDA8DD45C6B80388 /* RudderSDKCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderSDKCore.h; path = RudderSDKCore/RudderSDKCore/RudderSDKCore.h; sourceTree = "<group>"; };
+		317E8AF0FB45BCAE1ECB5B600A1C4B08 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		333B6E9A001C0D37F4635E871ABA51C5 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
+		37C2E43EB42F004D8A5928FC787C0459 /* RudderScreenInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderScreenInfo.m; path = RudderSDKCore/RudderSDKCore/RudderScreenInfo.m; sourceTree = "<group>"; };
+		391B4B25AB704FDDC67A6C71FD70F1EF /* NSString+ADJAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+ADJAdditions.h"; path = "Adjust/ADJAdditions/NSString+ADJAdditions.h"; sourceTree = "<group>"; };
+		3B212CB81A9876D11100F7BFC2AF74ED /* RudderContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderContext.m; path = RudderSDKCore/RudderSDKCore/RudderContext.m; sourceTree = "<group>"; };
+		3BA5F850B883DE1207EC018F72BF3C87 /* RudderMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderMessage.h; path = RudderSDKCore/RudderSDKCore/RudderMessage.h; sourceTree = "<group>"; };
+		3BD9D0094EE7987B213C74BB3AF2542C /* ADJPackageBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJPackageBuilder.m; path = Adjust/ADJPackageBuilder.m; sourceTree = "<group>"; };
+		3C47051D70952E1B797B3A278D0D8EA7 /* Pods-Rudder-Adjust_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rudder-Adjust_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3C7BFA04FC95D8E4111AC058DFE63226 /* RudderMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderMessage.m; path = RudderSDKCore/RudderSDKCore/RudderMessage.m; sourceTree = "<group>"; };
+		3E9DA210B3355130ACB1361E9E155346 /* RudderSDKCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RudderSDKCore-umbrella.h"; sourceTree = "<group>"; };
+		3EFE548EA4A5173E4EE504BCB569DE46 /* Utils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = RudderSDKCore/RudderSDKCore/Utils.m; sourceTree = "<group>"; };
+		3FAADE7BECFA016B586201BE4852C645 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		3FAE8DF231EF2B627862B609C069D129 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		40C2FE40CD46598B111ED46B39A3EECF /* RudderApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderApp.h; path = RudderSDKCore/RudderSDKCore/RudderApp.h; sourceTree = "<group>"; };
+		414A6698DC8635CA09F45ADF7C4FB666 /* Pods-Rudder-Adjust_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Rudder-Adjust_Example.modulemap"; sourceTree = "<group>"; };
+		414B922045CD4AD5A7950EC826BF49A1 /* ADJDeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJDeviceInfo.m; path = Adjust/ADJDeviceInfo.m; sourceTree = "<group>"; };
+		418FA3586F10DB93BE07B41ED1498085 /* NSData+ADJAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ADJAdditions.h"; path = "Adjust/ADJAdditions/NSData+ADJAdditions.h"; sourceTree = "<group>"; };
+		4226E0E6093E68816506B66582D2D559 /* EventRepository.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EventRepository.m; path = RudderSDKCore/RudderSDKCore/EventRepository.m; sourceTree = "<group>"; };
+		42844D7D5A27B7042BA166485903B038 /* ADJTimerCycle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJTimerCycle.h; path = Adjust/ADJTimerCycle.h; sourceTree = "<group>"; };
+		4289C9403BFDE435C11C535682198BB5 /* Adjust.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Adjust.xcconfig; sourceTree = "<group>"; };
+		4445D3841B1877704DA1F048DA21882F /* ADJEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJEvent.h; path = Adjust/ADJEvent.h; sourceTree = "<group>"; };
+		4514281E7286D462A2072B8D19FC12CB /* ADJSessionFailure.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJSessionFailure.m; path = Adjust/ADJSessionFailure.m; sourceTree = "<group>"; };
+		45FD3F8CA52D8575527B6BAF4911FB35 /* Pods-Rudder-Adjust_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rudder-Adjust_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4750A7B25F71E87D4138A6A6C6A806DD /* Pods-Rudder-Adjust_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rudder-Adjust_Example-dummy.m"; sourceTree = "<group>"; };
+		489F6A700769BA5F2683C35AA412253C /* RudderTraits.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderTraits.m; path = RudderSDKCore/RudderSDKCore/RudderTraits.m; sourceTree = "<group>"; };
+		4960E98136CECBF4CDB19059E5F72AB0 /* RudderSDKCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RudderSDKCore-dummy.m"; sourceTree = "<group>"; };
+		4DC6F5F3A5233E60FD17EE17C1F917AF /* ADJReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJReachability.h; path = Adjust/ADJReachability.h; sourceTree = "<group>"; };
+		4DD90418FDFFF78ADF7E1D05899FA0F4 /* Utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = RudderSDKCore/RudderSDKCore/Utils.h; sourceTree = "<group>"; };
+		4DEEE14B2FD824A8E03567B3FBD72DC2 /* ADJEventSuccess.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJEventSuccess.h; path = Adjust/ADJEventSuccess.h; sourceTree = "<group>"; };
+		4ECADA5A58F6C4E570B8FC21F03F4796 /* ADJEventFailure.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJEventFailure.h; path = Adjust/ADJEventFailure.h; sourceTree = "<group>"; };
+		4FC352B939BDD7E9AB464709FE3716AA /* RudderMessageBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderMessageBuilder.m; path = RudderSDKCore/RudderSDKCore/RudderMessageBuilder.m; sourceTree = "<group>"; };
+		513EE66B3A184A548D618917A6ACD77E /* RudderProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderProperty.m; path = RudderSDKCore/RudderSDKCore/RudderProperty.m; sourceTree = "<group>"; };
+		52304E26E1A368578B04385BCB8FF8B0 /* RudderOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderOption.h; path = RudderSDKCore/RudderSDKCore/RudderOption.h; sourceTree = "<group>"; };
+		53F8909217D1C84531E1C74E7F2EA6B4 /* Pods-Rudder-Adjust_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Rudder-Adjust_Tests.modulemap"; sourceTree = "<group>"; };
+		545A71F253920860E8BFFEFF27B5B0F0 /* RudderServerConfigSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderServerConfigSource.h; path = RudderSDKCore/RudderSDKCore/RudderServerConfigSource.h; sourceTree = "<group>"; };
+		55BC11564CC57456DF8FB7F3899F97CC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		570E82A642070E92EACD3928F6393238 /* RudderClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderClient.m; path = RudderSDKCore/RudderSDKCore/RudderClient.m; sourceTree = "<group>"; };
+		575FEC9C8978EB523101C8F2FB1B93B2 /* RudderTraitsBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderTraitsBuilder.m; path = RudderSDKCore/RudderSDKCore/RudderTraitsBuilder.m; sourceTree = "<group>"; };
+		5999CF5CB11C1FFB8F8E58405E200440 /* RudderIntegration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderIntegration.h; path = RudderSDKCore/RudderSDKCore/RudderIntegration.h; sourceTree = "<group>"; };
+		59EC3D6712FED364CB22689EFED7B9CD /* DBPersistentManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBPersistentManager.h; path = RudderSDKCore/RudderSDKCore/DBPersistentManager.h; sourceTree = "<group>"; };
+		59F7668EC3A982278AB2A779A9FBBA4D /* RudderServerDestination.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderServerDestination.h; path = RudderSDKCore/RudderSDKCore/RudderServerDestination.h; sourceTree = "<group>"; };
+		5BC65387E8E18904CF33A51D81E50FDD /* ADJRequestHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJRequestHandler.m; path = Adjust/ADJRequestHandler.m; sourceTree = "<group>"; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C9A6B136A4E08D9CAACD03BAAE29FF1 /* Pods-Rudder-Adjust_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Rudder-Adjust_Example-umbrella.h"; sourceTree = "<group>"; };
+		6124FABE08539D9FA18D6A40BBAB123F /* Pods-Rudder-Adjust_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rudder-Adjust_Tests-dummy.m"; sourceTree = "<group>"; };
+		6167A94B43412297529F98C375D78676 /* RudderLibraryInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderLibraryInfo.m; path = RudderSDKCore/RudderSDKCore/RudderLibraryInfo.m; sourceTree = "<group>"; };
+		61A80C086389D47E6049455047D24EFD /* RudderSDKCore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RudderSDKCore-Info.plist"; sourceTree = "<group>"; };
+		64C9153230D0AC57C03C4EBE34B5EDC1 /* Rudder-Adjust-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Rudder-Adjust-dummy.m"; sourceTree = "<group>"; };
+		653417151573CF7B2E1DD61F198D7B04 /* Pods-Rudder-Adjust_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Rudder-Adjust_Example-frameworks.sh"; sourceTree = "<group>"; };
+		654A977A98DE9B594994AA7336B3F59C /* EventRepository.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EventRepository.h; path = RudderSDKCore/RudderSDKCore/EventRepository.h; sourceTree = "<group>"; };
+		656BD4AA469276F0CF2BEA2C62F6B22B /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		65AF27E799FEFAB6CB5CED9D5389406C /* ADJActivityHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJActivityHandler.h; path = Adjust/ADJActivityHandler.h; sourceTree = "<group>"; };
+		667922B1BD3F199974A3A00E106AF0FB /* ADJLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJLogger.m; path = Adjust/ADJLogger.m; sourceTree = "<group>"; };
+		686D1B7EE09BF86FFD9E910E1A1ABAC5 /* RudderAdjustFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderAdjustFactory.h; path = "Rudder-Adjust/Classes/RudderAdjustFactory.h"; sourceTree = "<group>"; };
+		6A1D25E6F79453C44316C40940B3A2C6 /* Adjust-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Adjust-umbrella.h"; sourceTree = "<group>"; };
+		6B5C98769F213E69891B241AA70B0CA9 /* ADJDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJDeviceInfo.h; path = Adjust/ADJDeviceInfo.h; sourceTree = "<group>"; };
+		6C4451C5F5D7D8CD16D330935AC04CE6 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		6C63966F11E835BBF7D11C52803BCBFF /* Pods-Rudder-Adjust_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rudder-Adjust_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6C89B589FEEFD2B4730BCB285EE5F3EF /* ADJTimerCycle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJTimerCycle.m; path = Adjust/ADJTimerCycle.m; sourceTree = "<group>"; };
+		6F3F0AE2AC90FC520C00B8A4D086C6A3 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
+		6F85981D1647FA958F6DC5888BA95328 /* RudderAdjustFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderAdjustFactory.m; path = "Rudder-Adjust/Classes/RudderAdjustFactory.m"; sourceTree = "<group>"; };
+		70A2259014B14B43E4D7F4D242C7F639 /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		72013C059716AAC4946CED354D901C41 /* Rudder-Adjust.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Rudder-Adjust.modulemap"; sourceTree = "<group>"; };
+		72FD3E4083AAECCDCA6BDA8056B2357E /* RudderAdjustIntegration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderAdjustIntegration.m; path = "Rudder-Adjust/Classes/RudderAdjustIntegration.m"; sourceTree = "<group>"; };
+		746D1C24A31AD5C877DE21495CE8F1C4 /* ADJKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJKeychain.h; path = Adjust/ADJKeychain.h; sourceTree = "<group>"; };
+		7570CC2A6508F85087FE83808E88F1C1 /* RudderLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderLogger.h; path = RudderSDKCore/RudderSDKCore/RudderLogger.h; sourceTree = "<group>"; };
+		7700E2CD4F436398D4665121CD32A74D /* RudderOSInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderOSInfo.h; path = RudderSDKCore/RudderSDKCore/RudderOSInfo.h; sourceTree = "<group>"; };
+		77B2CB8599D7A31CF37B76E7816EA928 /* RudderServerDestination.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderServerDestination.m; path = RudderSDKCore/RudderSDKCore/RudderServerDestination.m; sourceTree = "<group>"; };
+		7A875FAF31DFCE4EBCFA1B3EF65D35FC /* RudderOSInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderOSInfo.m; path = RudderSDKCore/RudderSDKCore/RudderOSInfo.m; sourceTree = "<group>"; };
+		7CB0EFBB59E14C25DFB163F381822F59 /* RudderProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderProperty.h; path = RudderSDKCore/RudderSDKCore/RudderProperty.h; sourceTree = "<group>"; };
+		7E5097DD022F2EF8F2D9759BB7DD62F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7FF5C62DF1E2D492F272FD7D2A1EF4A3 /* Adjust.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Adjust.framework; path = Adjust.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81027FC59131A9F626DDB464EB229475 /* RudderIntegrationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderIntegrationFactory.h; path = RudderSDKCore/RudderSDKCore/RudderIntegrationFactory.h; sourceTree = "<group>"; };
+		810C646160D7DB85560AC068094D499D /* RudderSDKCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RudderSDKCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81BD8A4D464078DAF8138952BAE54426 /* ADJAttribution.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJAttribution.m; path = Adjust/ADJAttribution.m; sourceTree = "<group>"; };
+		8355F7DB0E3B2F7ADC7CA38370B74951 /* Rudder_Adjust.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Rudder_Adjust.framework; path = "Rudder-Adjust.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		847CAA659B1DECEF61AAF859CB452D70 /* ADJLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJLogger.h; path = Adjust/ADJLogger.h; sourceTree = "<group>"; };
+		8586BD1A675916F0FBCFC2B4099A8C92 /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
+		88E75822721F1C0E3DB1CA0F63CB52C5 /* ADJBackoffStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJBackoffStrategy.h; path = Adjust/ADJBackoffStrategy.h; sourceTree = "<group>"; };
+		8A554CD0CD2362074B0B6C4398C937F8 /* RudderConfigBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderConfigBuilder.m; path = RudderSDKCore/RudderSDKCore/RudderConfigBuilder.m; sourceTree = "<group>"; };
+		8AE725D9E5D7DB8FF7A2090E8FF643EA /* ADJSessionSuccess.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJSessionSuccess.h; path = Adjust/ADJSessionSuccess.h; sourceTree = "<group>"; };
+		8BE659129F59B7EDAF3C242433A72966 /* RudderSDKCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RudderSDKCore.xcconfig; sourceTree = "<group>"; };
+		8D01B7A376089C48171C3BA8011A9D49 /* Pods_Rudder_Adjust_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Rudder_Adjust_Example.framework; path = "Pods-Rudder-Adjust_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D96BA20EFACFA6CFCD77BD698BA26A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8D99ED3CD498A6D6209E50528A3ACC2C /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
+		8F89BC1D4460507EFACE5D0D03079B5C /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = "Rudder-Adjust/Classes/ReplaceMe.m"; sourceTree = "<group>"; };
+		922494CFC6862C00842B706C438AB769 /* Pods-Rudder-Adjust_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Rudder-Adjust_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93F9739241D14E13B309FE004A7D10ED /* ADJActivityState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJActivityState.h; path = Adjust/ADJActivityState.h; sourceTree = "<group>"; };
+		9500371F36C765E6AAC4D6A5DBF3B302 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
+		953BF9D42644C748FDE89C50FE36765D /* RudderApp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderApp.m; path = RudderSDKCore/RudderSDKCore/RudderApp.m; sourceTree = "<group>"; };
+		95D8FFB995EC137E2569F742762A45E4 /* Rudder-Adjust-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rudder-Adjust-prefix.pch"; sourceTree = "<group>"; };
+		9728045CE18C80623E1BEC6C2DD69D35 /* RudderClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderClient.h; path = RudderSDKCore/RudderSDKCore/RudderClient.h; sourceTree = "<group>"; };
+		9948652A19463DE82775BFA407B0CB3A /* RudderDeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderDeviceInfo.m; path = RudderSDKCore/RudderSDKCore/RudderDeviceInfo.m; sourceTree = "<group>"; };
+		99A6B556CECD6820A0326F4D6A8945A6 /* NSData+ADJAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ADJAdditions.m"; path = "Adjust/ADJAdditions/NSData+ADJAdditions.m"; sourceTree = "<group>"; };
+		9B54E3BA3E9EE771C3132B83F7E6F452 /* RudderServerConfigSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderServerConfigSource.m; path = RudderSDKCore/RudderSDKCore/RudderServerConfigSource.m; sourceTree = "<group>"; };
+		9BDAC2F058010D3FA548B98F038759E4 /* Rudder-Adjust-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rudder-Adjust-umbrella.h"; sourceTree = "<group>"; };
+		9CD80A0D8E0BD5093AC51D6CA10B5EDA /* PagePropertyBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PagePropertyBuilder.m; path = RudderSDKCore/RudderSDKCore/PagePropertyBuilder.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DBFD261CDC6F31570E36333535F99C6 /* RudderTraits.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderTraits.h; path = RudderSDKCore/RudderSDKCore/RudderTraits.h; sourceTree = "<group>"; };
+		9FF6D178DA8EFD2CCC37C2C836BB936C /* RudderElementCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderElementCache.h; path = RudderSDKCore/RudderSDKCore/RudderElementCache.h; sourceTree = "<group>"; };
+		A0A7B20417D61F806C554AF6B231DCE0 /* ADJAttributionHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJAttributionHandler.h; path = Adjust/ADJAttributionHandler.h; sourceTree = "<group>"; };
+		A25790B8A589315EA89F24E2F04A64B5 /* ADJActivityKind.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJActivityKind.h; path = Adjust/ADJActivityKind.h; sourceTree = "<group>"; };
+		A3665AAABA6A3A7CABD3BB480EE44BEE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A36C5216CD788996B6801F2DE1CA2E93 /* ADJSessionParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJSessionParameters.m; path = Adjust/ADJSessionParameters.m; sourceTree = "<group>"; };
+		A53FEA019E30ADB6DD4D87FA5C771740 /* TrackPropertyBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TrackPropertyBuilder.h; path = RudderSDKCore/RudderSDKCore/TrackPropertyBuilder.h; sourceTree = "<group>"; };
+		AA37BCDFF41814355FA0326257BBAF8F /* RudderDBMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderDBMessage.h; path = RudderSDKCore/RudderSDKCore/RudderDBMessage.h; sourceTree = "<group>"; };
+		ACDE7B26D0C4A25CBAC554A996050C79 /* RudderContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderContext.h; path = RudderSDKCore/RudderSDKCore/RudderContext.h; sourceTree = "<group>"; };
+		ACE64A81FD310D72F92E0BCCCE2C7EC2 /* ADJKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJKeychain.m; path = Adjust/ADJKeychain.m; sourceTree = "<group>"; };
+		B00D690F0ECCFDBE9FE17C53C07C1FB0 /* ADJSystemProfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJSystemProfile.h; path = Adjust/ADJSystemProfile.h; sourceTree = "<group>"; };
+		B07021B00CBFB5B859AE536ABF25FDB1 /* Adjust.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Adjust.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0F33FB4CDD6F93E601EEA1B3C9F445A /* ScreenPropertyBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ScreenPropertyBuilder.m; path = RudderSDKCore/RudderSDKCore/ScreenPropertyBuilder.m; sourceTree = "<group>"; };
+		B2D364F540A41966B217DFEE9E7CC809 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		B34EF541ECCD74E172B1A799020E4318 /* DBPersistentManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBPersistentManager.m; path = RudderSDKCore/RudderSDKCore/DBPersistentManager.m; sourceTree = "<group>"; };
+		B3E730FF29BB5D84387D571F10A95106 /* RudderLibraryInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderLibraryInfo.h; path = RudderSDKCore/RudderSDKCore/RudderLibraryInfo.h; sourceTree = "<group>"; };
+		B755AA974F73B6CACFB4475114D0035C /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		BA9BFB19C349D6CD74464D72D1647EE7 /* RudderSDKCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RudderSDKCore-prefix.pch"; sourceTree = "<group>"; };
+		BAC8A8F818E7F7A2A7B9217E87EDBD35 /* RudderOption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderOption.m; path = RudderSDKCore/RudderSDKCore/RudderOption.m; sourceTree = "<group>"; };
+		BC5C1F4A2C1FCE2DDC7CCEB9D05864C3 /* ADJResponseData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJResponseData.m; path = Adjust/ADJResponseData.m; sourceTree = "<group>"; };
+		BD91FE9417E5EA6D8D9292A180842D1D /* ADJActivityHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJActivityHandler.m; path = Adjust/ADJActivityHandler.m; sourceTree = "<group>"; };
+		BE18D6AB76C0386DD06577371381E96B /* ADJEventSuccess.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJEventSuccess.m; path = Adjust/ADJEventSuccess.m; sourceTree = "<group>"; };
+		C370B7EBF719ACDE477E094BED7B41D3 /* ADJSessionParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJSessionParameters.h; path = Adjust/ADJSessionParameters.h; sourceTree = "<group>"; };
+		C3771777D9246619EDA612D41116E5EE /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
+		C43ABC043F0BD70A23ABA224025E4A1A /* ADJEventFailure.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJEventFailure.m; path = Adjust/ADJEventFailure.m; sourceTree = "<group>"; };
+		C4CA2886CB77648E82323DA4F592FB9C /* RudderServerConfigManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderServerConfigManager.h; path = RudderSDKCore/RudderSDKCore/RudderServerConfigManager.h; sourceTree = "<group>"; };
+		C521E4F7F2BFEBD6E7AF4453A34D251B /* RudderServerDestinationDefinition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderServerDestinationDefinition.m; path = RudderSDKCore/RudderSDKCore/RudderServerDestinationDefinition.m; sourceTree = "<group>"; };
+		C58630AD1A0256C9C0A64EEEF58E0754 /* ADJSessionFailure.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJSessionFailure.h; path = Adjust/ADJSessionFailure.h; sourceTree = "<group>"; };
+		C61E74FB22F32DA31F2D51D7ED573C46 /* RudderServerDestinationDefinition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderServerDestinationDefinition.h; path = RudderSDKCore/RudderSDKCore/RudderServerDestinationDefinition.h; sourceTree = "<group>"; };
+		C90C9C6B7B765527DD29470D62573C92 /* Adjust.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Adjust.modulemap; sourceTree = "<group>"; };
+		CB43A3A790B02D5CD5A2DB3DBDC792C4 /* RudderServerConfigManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderServerConfigManager.m; path = RudderSDKCore/RudderSDKCore/RudderServerConfigManager.m; sourceTree = "<group>"; };
+		CDA7A6B73F45DEC899A8ADEE6C87A722 /* ADJUserDefaults.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJUserDefaults.m; path = Adjust/ADJUserDefaults.m; sourceTree = "<group>"; };
+		CE4F4DC7C9AAA851F9701491E466E2D8 /* ADJPackageBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJPackageBuilder.h; path = Adjust/ADJPackageBuilder.h; sourceTree = "<group>"; };
+		CF99364A9E7DEE89A265C91CBBDE54A9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		D122698681C387B3C34B7FB33FD43CD5 /* Adjust.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Adjust.h; path = Adjust/Adjust.h; sourceTree = "<group>"; };
+		D3429A489BE84BEEE9AA4560DBD02BBF /* Rudder-Adjust-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Rudder-Adjust-Info.plist"; sourceTree = "<group>"; };
+		D3CFB31428DC9B6C603F38FA120520F7 /* ADJAdjustFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJAdjustFactory.m; path = Adjust/ADJAdjustFactory.m; sourceTree = "<group>"; };
+		D62AD34611102CE28BCA586AF05D5F83 /* ADJSystemProfile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJSystemProfile.m; path = Adjust/ADJSystemProfile.m; sourceTree = "<group>"; };
+		D65C1012A1FA4F681AD7B068D29F39AE /* PagePropertyBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PagePropertyBuilder.h; path = RudderSDKCore/RudderSDKCore/PagePropertyBuilder.h; sourceTree = "<group>"; };
+		D7B00C932FD5BBCC457CA8D2AAAAC453 /* ADJUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJUserDefaults.h; path = Adjust/ADJUserDefaults.h; sourceTree = "<group>"; };
+		D893DB20C62921558C0F7A35105D8256 /* Adjust-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Adjust-prefix.pch"; sourceTree = "<group>"; };
+		D8D0EF19CA1F93AA65652726F764DA09 /* UIDevice+ADJAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+ADJAdditions.m"; path = "Adjust/ADJAdditions/UIDevice+ADJAdditions.m"; sourceTree = "<group>"; };
+		DB038FB76C7705CC729854A8DEA44D75 /* ADJBackoffStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJBackoffStrategy.m; path = Adjust/ADJBackoffStrategy.m; sourceTree = "<group>"; };
+		DCDFA40994C3EE46895B8F4348D59F29 /* ADJActivityKind.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJActivityKind.m; path = Adjust/ADJActivityKind.m; sourceTree = "<group>"; };
+		DDC473FC2D942B65AB9D5A6F551BFADE /* Pods-Rudder-Adjust_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Rudder-Adjust_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		DF6F86169B2C59270562609C9B790677 /* Adjust.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Adjust.m; path = Adjust/Adjust.m; sourceTree = "<group>"; };
+		DFF833CDA526C1B691A76ABD480FF2CB /* Pods-Rudder-Adjust_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rudder-Adjust_Tests-Info.plist"; sourceTree = "<group>"; };
+		E02F70CAEE07BD68EA0549B939CFF959 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		E19CAB7BB2BF64AC21F9BDB951030AA1 /* UIDevice+ADJAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+ADJAdditions.h"; path = "Adjust/ADJAdditions/UIDevice+ADJAdditions.h"; sourceTree = "<group>"; };
+		E1A99A6801E993FF3ADDDFEE6816B4FA /* RudderConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderConfig.h; path = RudderSDKCore/RudderSDKCore/RudderConfig.h; sourceTree = "<group>"; };
+		E20488311AF50DE1DD2068A08EE1225C /* ADJConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJConfig.m; path = Adjust/ADJConfig.m; sourceTree = "<group>"; };
+		E80124F5E429B06ADCBAAE3F5B3A9722 /* ADJActivityPackage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJActivityPackage.h; path = Adjust/ADJActivityPackage.h; sourceTree = "<group>"; };
+		E85094FBE4E077E1D38419CFD5233E79 /* ADJActivityState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJActivityState.m; path = Adjust/ADJActivityState.m; sourceTree = "<group>"; };
+		E99C50966191579640563B8855D80A7C /* Pods-Rudder-Adjust_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Rudder-Adjust_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EAD4ADB9F4E55D6DE198803C6446B5BA /* ScreenPropertyBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ScreenPropertyBuilder.h; path = RudderSDKCore/RudderSDKCore/ScreenPropertyBuilder.h; sourceTree = "<group>"; };
+		EBB403873F9A64B31E35B0C7DD74156C /* ADJResponseData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJResponseData.h; path = Adjust/ADJResponseData.h; sourceTree = "<group>"; };
+		EBCBDF5A822575738946EF1EE9BE84A4 /* Pods_Rudder_Adjust_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Rudder_Adjust_Tests.framework; path = "Pods-Rudder-Adjust_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED7F21A4E2211393513FC87A3F9779BA /* RudderScreenInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RudderScreenInfo.h; path = RudderSDKCore/RudderSDKCore/RudderScreenInfo.h; sourceTree = "<group>"; };
+		EFDD174D577D697F8C61633FB3435A1C /* ADJRequestHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJRequestHandler.h; path = Adjust/ADJRequestHandler.h; sourceTree = "<group>"; };
+		EFEAE49ED83316D6ED977FFB218D8928 /* RudderSDKCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RudderSDKCore.framework; path = RudderSDKCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F132D11529FC5411237D62FFC6B8AF53 /* ADJEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJEvent.m; path = Adjust/ADJEvent.m; sourceTree = "<group>"; };
+		F32AD9E8550D5FC49DEC8814DC337DBA /* NSString+ADJAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+ADJAdditions.m"; path = "Adjust/ADJAdditions/NSString+ADJAdditions.m"; sourceTree = "<group>"; };
+		F65AD8A2FC43D0579FC4589E29B471F8 /* RudderDBMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderDBMessage.m; path = RudderSDKCore/RudderSDKCore/RudderDBMessage.m; sourceTree = "<group>"; };
+		F65CAA7B8420260E4636ECDDC89B50B0 /* ADJSessionSuccess.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJSessionSuccess.m; path = Adjust/ADJSessionSuccess.m; sourceTree = "<group>"; };
+		F8193512EF0B4C82CF2B352CAAEE5140 /* ADJTimerOnce.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJTimerOnce.m; path = Adjust/ADJTimerOnce.m; sourceTree = "<group>"; };
+		F897DD8EF196EE7708C381E11B22465D /* ADJConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJConfig.h; path = Adjust/ADJConfig.h; sourceTree = "<group>"; };
+		F8AD0F57951B2544C2EF271ECC29D393 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		F9207011A87EC8557049054E987185F4 /* Pods-Rudder-Adjust_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rudder-Adjust_Example-Info.plist"; sourceTree = "<group>"; };
+		FAD9C702656BE5E0D3FEE5D3BBE662D6 /* ADJAdjustFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ADJAdjustFactory.h; path = Adjust/ADJAdjustFactory.h; sourceTree = "<group>"; };
+		FB842AF8C0EA2EAC874A1DF3F7F181BF /* RudderConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RudderConfig.m; path = RudderSDKCore/RudderSDKCore/RudderConfig.m; sourceTree = "<group>"; };
+		FE9766A39739388D56867F2639B07583 /* ADJActivityPackage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJActivityPackage.m; path = Adjust/ADJActivityPackage.m; sourceTree = "<group>"; };
+		FF7AD7835F66B2969CE0F6D1B1C8D03F /* Adjust-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Adjust-Info.plist"; sourceTree = "<group>"; };
+		FFA2A3395A0E0B4E0AC6FE2044CF4CE3 /* ADJAttributionHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ADJAttributionHandler.m; path = Adjust/ADJAttributionHandler.m; sourceTree = "<group>"; };
+		FFAE34AE05A5322B606304FC704975FE /* Pods-Rudder-Adjust_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rudder-Adjust_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FFD0895B8262826A5A6D1BB0BA1C438F /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D0F3D97633F135A4E4D96996489804D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CBC1F8492AC0AC1E88A94D442D523F8 /* Adjust.framework in Frameworks */,
+				F9D87441A0D5016E5AA5123A43757A7D /* Foundation.framework in Frameworks */,
+				85145E38D77EBAF5A0D41C2734506626 /* RudderSDKCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		650BAFA10CB7B74F7F96348DE955150B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4EB6EBEEFD05961D5810B29BA04404 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C79BFF9141FBDB24D5597E95CF68224D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8ED7FE64AC64F816DB34DB544E16472 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E07EBC1AAB2BE0A5DDECF381019226BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F740E256B7328388A03F7F5F0365F93A /* Foundation.framework in Frameworks */,
+				50F51CA8A20221CE4EFEEB3FD4EBB700 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E581515110D66F94F80A6937831489A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B25D795BDC4F426BC01EFC911F368B81 /* Foundation.framework in Frameworks */,
+				14C511527597E5846AB2627F791C7D8E /* QuartzCore.framework in Frameworks */,
+				E0B8D095C732352C854D365B9E5B993D /* UIKit.framework in Frameworks */,
+				6AE239C5D116E1C06F5705699FB9EAF0 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7AF64E52DD5BFC126CB74E4B6DB963 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1801DBC94B17BA0E577839DE529B113 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EDFE83CF91E89F3C33C92DF48DACFAE /* RudderSDKCore */ = {
+			isa = PBXGroup;
+			children = (
+				59EC3D6712FED364CB22689EFED7B9CD /* DBPersistentManager.h */,
+				B34EF541ECCD74E172B1A799020E4318 /* DBPersistentManager.m */,
+				654A977A98DE9B594994AA7336B3F59C /* EventRepository.h */,
+				4226E0E6093E68816506B66582D2D559 /* EventRepository.m */,
+				D65C1012A1FA4F681AD7B068D29F39AE /* PagePropertyBuilder.h */,
+				9CD80A0D8E0BD5093AC51D6CA10B5EDA /* PagePropertyBuilder.m */,
+				40C2FE40CD46598B111ED46B39A3EECF /* RudderApp.h */,
+				953BF9D42644C748FDE89C50FE36765D /* RudderApp.m */,
+				9728045CE18C80623E1BEC6C2DD69D35 /* RudderClient.h */,
+				570E82A642070E92EACD3928F6393238 /* RudderClient.m */,
+				E1A99A6801E993FF3ADDDFEE6816B4FA /* RudderConfig.h */,
+				FB842AF8C0EA2EAC874A1DF3F7F181BF /* RudderConfig.m */,
+				20B27BF101FC5F7A85593E373095F2FA /* RudderConfigBuilder.h */,
+				8A554CD0CD2362074B0B6C4398C937F8 /* RudderConfigBuilder.m */,
+				ACDE7B26D0C4A25CBAC554A996050C79 /* RudderContext.h */,
+				3B212CB81A9876D11100F7BFC2AF74ED /* RudderContext.m */,
+				AA37BCDFF41814355FA0326257BBAF8F /* RudderDBMessage.h */,
+				F65AD8A2FC43D0579FC4589E29B471F8 /* RudderDBMessage.m */,
+				25BF8FF82FDE6A566D42C2D05B9CDE00 /* RudderDeviceInfo.h */,
+				9948652A19463DE82775BFA407B0CB3A /* RudderDeviceInfo.m */,
+				9FF6D178DA8EFD2CCC37C2C836BB936C /* RudderElementCache.h */,
+				1E4146395BA931933DBC2D197A523442 /* RudderElementCache.m */,
+				5999CF5CB11C1FFB8F8E58405E200440 /* RudderIntegration.h */,
+				81027FC59131A9F626DDB464EB229475 /* RudderIntegrationFactory.h */,
+				B3E730FF29BB5D84387D571F10A95106 /* RudderLibraryInfo.h */,
+				6167A94B43412297529F98C375D78676 /* RudderLibraryInfo.m */,
+				7570CC2A6508F85087FE83808E88F1C1 /* RudderLogger.h */,
+				29E241F132FA48F43057732D1DF124D0 /* RudderLogger.m */,
+				3BA5F850B883DE1207EC018F72BF3C87 /* RudderMessage.h */,
+				3C7BFA04FC95D8E4111AC058DFE63226 /* RudderMessage.m */,
+				1AC748F7092962A66624D9126BF3B2D9 /* RudderMessageBuilder.h */,
+				4FC352B939BDD7E9AB464709FE3716AA /* RudderMessageBuilder.m */,
+				1754D857F64121342AE347D593B90587 /* RudderNetwork.h */,
+				2E594C379FB5E09E0E01FCB3B5C3C99F /* RudderNetwork.m */,
+				52304E26E1A368578B04385BCB8FF8B0 /* RudderOption.h */,
+				BAC8A8F818E7F7A2A7B9217E87EDBD35 /* RudderOption.m */,
+				7700E2CD4F436398D4665121CD32A74D /* RudderOSInfo.h */,
+				7A875FAF31DFCE4EBCFA1B3EF65D35FC /* RudderOSInfo.m */,
+				7CB0EFBB59E14C25DFB163F381822F59 /* RudderProperty.h */,
+				513EE66B3A184A548D618917A6ACD77E /* RudderProperty.m */,
+				ED7F21A4E2211393513FC87A3F9779BA /* RudderScreenInfo.h */,
+				37C2E43EB42F004D8A5928FC787C0459 /* RudderScreenInfo.m */,
+				307958453298A3CCDDA8DD45C6B80388 /* RudderSDKCore.h */,
+				C4CA2886CB77648E82323DA4F592FB9C /* RudderServerConfigManager.h */,
+				CB43A3A790B02D5CD5A2DB3DBDC792C4 /* RudderServerConfigManager.m */,
+				545A71F253920860E8BFFEFF27B5B0F0 /* RudderServerConfigSource.h */,
+				9B54E3BA3E9EE771C3132B83F7E6F452 /* RudderServerConfigSource.m */,
+				59F7668EC3A982278AB2A779A9FBBA4D /* RudderServerDestination.h */,
+				77B2CB8599D7A31CF37B76E7816EA928 /* RudderServerDestination.m */,
+				C61E74FB22F32DA31F2D51D7ED573C46 /* RudderServerDestinationDefinition.h */,
+				C521E4F7F2BFEBD6E7AF4453A34D251B /* RudderServerDestinationDefinition.m */,
+				9DBFD261CDC6F31570E36333535F99C6 /* RudderTraits.h */,
+				489F6A700769BA5F2683C35AA412253C /* RudderTraits.m */,
+				2485CC4E5FF994A2BCEA75FE9FA7591E /* RudderTraitsBuilder.h */,
+				575FEC9C8978EB523101C8F2FB1B93B2 /* RudderTraitsBuilder.m */,
+				EAD4ADB9F4E55D6DE198803C6446B5BA /* ScreenPropertyBuilder.h */,
+				B0F33FB4CDD6F93E601EEA1B3C9F445A /* ScreenPropertyBuilder.m */,
+				A53FEA019E30ADB6DD4D87FA5C771740 /* TrackPropertyBuilder.h */,
+				22414C3B6C106C74CD57F0833F6F8F21 /* TrackPropertyBuilder.m */,
+				4DD90418FDFFF78ADF7E1D05899FA0F4 /* Utils.h */,
+				3EFE548EA4A5173E4EE504BCB569DE46 /* Utils.m */,
+				5E3381D9D2616B16BA085F4E265823A8 /* Support Files */,
+			);
+			name = RudderSDKCore;
+			path = RudderSDKCore;
+			sourceTree = "<group>";
+		};
+		3F727B8F38BAF7F904F3779A3371422B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C90C9C6B7B765527DD29470D62573C92 /* Adjust.modulemap */,
+				4289C9403BFDE435C11C535682198BB5 /* Adjust.xcconfig */,
+				101F57751AB76F948DFFBEA0A37F83B1 /* Adjust-dummy.m */,
+				FF7AD7835F66B2969CE0F6D1B1C8D03F /* Adjust-Info.plist */,
+				D893DB20C62921558C0F7A35105D8256 /* Adjust-prefix.pch */,
+				6A1D25E6F79453C44316C40940B3A2C6 /* Adjust-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Adjust";
+			sourceTree = "<group>";
+		};
+		4E1888CF87271C37849601AAD56EF53D /* SwiftSupport */ = {
+			isa = PBXGroup;
+			children = (
+				E02F70CAEE07BD68EA0549B939CFF959 /* SwiftSupport.swift */,
+			);
+			name = SwiftSupport;
+			sourceTree = "<group>";
+		};
+		570ECDD4266D9554DF0DDDD5DD4B6E40 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				656BD4AA469276F0CF2BEA2C62F6B22B /* FBSnapshotTestCase.h */,
+				2BC7FB8344A60D87388CB18793128182 /* FBSnapshotTestCase.m */,
+				F8AD0F57951B2544C2EF271ECC29D393 /* FBSnapshotTestCasePlatform.h */,
+				3FAADE7BECFA016B586201BE4852C645 /* FBSnapshotTestCasePlatform.m */,
+				6C4451C5F5D7D8CD16D330935AC04CE6 /* FBSnapshotTestController.h */,
+				2760AC413FB3FDB2A2149CBAC100F496 /* FBSnapshotTestController.m */,
+				8586BD1A675916F0FBCFC2B4099A8C92 /* UIApplication+StrictKeyWindow.h */,
+				248800D16B2232C4D64F44AF357962D6 /* UIApplication+StrictKeyWindow.m */,
+				FFD0895B8262826A5A6D1BB0BA1C438F /* UIImage+Compare.h */,
+				6F3F0AE2AC90FC520C00B8A4D086C6A3 /* UIImage+Compare.m */,
+				8D99ED3CD498A6D6209E50528A3ACC2C /* UIImage+Diff.h */,
+				9500371F36C765E6AAC4D6A5DBF3B302 /* UIImage+Diff.m */,
+				317E8AF0FB45BCAE1ECB5B600A1C4B08 /* UIImage+Snapshot.h */,
+				23FCB61F456CDC153E3D0FEED10548D3 /* UIImage+Snapshot.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		5E3381D9D2616B16BA085F4E265823A8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				072E2EAC90AE3936E6E8C04051EAF10C /* RudderSDKCore.modulemap */,
+				8BE659129F59B7EDAF3C242433A72966 /* RudderSDKCore.xcconfig */,
+				4960E98136CECBF4CDB19059E5F72AB0 /* RudderSDKCore-dummy.m */,
+				61A80C086389D47E6049455047D24EFD /* RudderSDKCore-Info.plist */,
+				BA9BFB19C349D6CD74464D72D1647EE7 /* RudderSDKCore-prefix.pch */,
+				3E9DA210B3355130ACB1361E9E155346 /* RudderSDKCore-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RudderSDKCore";
+			sourceTree = "<group>";
+		};
+		62AF1BABC5B29F75F045177602E0C156 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95BC5BFEBDFB63F81C13803A2700C92A /* Rudder-Adjust */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6792FDB1D6F2531199B6285BFA96AC8D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				65AF27E799FEFAB6CB5CED9D5389406C /* ADJActivityHandler.h */,
+				BD91FE9417E5EA6D8D9292A180842D1D /* ADJActivityHandler.m */,
+				A25790B8A589315EA89F24E2F04A64B5 /* ADJActivityKind.h */,
+				DCDFA40994C3EE46895B8F4348D59F29 /* ADJActivityKind.m */,
+				E80124F5E429B06ADCBAAE3F5B3A9722 /* ADJActivityPackage.h */,
+				FE9766A39739388D56867F2639B07583 /* ADJActivityPackage.m */,
+				93F9739241D14E13B309FE004A7D10ED /* ADJActivityState.h */,
+				E85094FBE4E077E1D38419CFD5233E79 /* ADJActivityState.m */,
+				FAD9C702656BE5E0D3FEE5D3BBE662D6 /* ADJAdjustFactory.h */,
+				D3CFB31428DC9B6C603F38FA120520F7 /* ADJAdjustFactory.m */,
+				21A748792986870DC981EFED45937D34 /* ADJAttribution.h */,
+				81BD8A4D464078DAF8138952BAE54426 /* ADJAttribution.m */,
+				A0A7B20417D61F806C554AF6B231DCE0 /* ADJAttributionHandler.h */,
+				FFA2A3395A0E0B4E0AC6FE2044CF4CE3 /* ADJAttributionHandler.m */,
+				88E75822721F1C0E3DB1CA0F63CB52C5 /* ADJBackoffStrategy.h */,
+				DB038FB76C7705CC729854A8DEA44D75 /* ADJBackoffStrategy.m */,
+				F897DD8EF196EE7708C381E11B22465D /* ADJConfig.h */,
+				E20488311AF50DE1DD2068A08EE1225C /* ADJConfig.m */,
+				6B5C98769F213E69891B241AA70B0CA9 /* ADJDeviceInfo.h */,
+				414B922045CD4AD5A7950EC826BF49A1 /* ADJDeviceInfo.m */,
+				4445D3841B1877704DA1F048DA21882F /* ADJEvent.h */,
+				F132D11529FC5411237D62FFC6B8AF53 /* ADJEvent.m */,
+				4ECADA5A58F6C4E570B8FC21F03F4796 /* ADJEventFailure.h */,
+				C43ABC043F0BD70A23ABA224025E4A1A /* ADJEventFailure.m */,
+				4DEEE14B2FD824A8E03567B3FBD72DC2 /* ADJEventSuccess.h */,
+				BE18D6AB76C0386DD06577371381E96B /* ADJEventSuccess.m */,
+				746D1C24A31AD5C877DE21495CE8F1C4 /* ADJKeychain.h */,
+				ACE64A81FD310D72F92E0BCCCE2C7EC2 /* ADJKeychain.m */,
+				847CAA659B1DECEF61AAF859CB452D70 /* ADJLogger.h */,
+				667922B1BD3F199974A3A00E106AF0FB /* ADJLogger.m */,
+				CE4F4DC7C9AAA851F9701491E466E2D8 /* ADJPackageBuilder.h */,
+				3BD9D0094EE7987B213C74BB3AF2542C /* ADJPackageBuilder.m */,
+				0225BF7A71E23CFCCB6F2887471DDA23 /* ADJPackageHandler.h */,
+				057CD36C256F44ECB77D812FF1A93FBC /* ADJPackageHandler.m */,
+				4DC6F5F3A5233E60FD17EE17C1F917AF /* ADJReachability.h */,
+				048B2C36B4FEC0227454AB5BB42EF26D /* ADJReachability.m */,
+				EFDD174D577D697F8C61633FB3435A1C /* ADJRequestHandler.h */,
+				5BC65387E8E18904CF33A51D81E50FDD /* ADJRequestHandler.m */,
+				EBB403873F9A64B31E35B0C7DD74156C /* ADJResponseData.h */,
+				BC5C1F4A2C1FCE2DDC7CCEB9D05864C3 /* ADJResponseData.m */,
+				18C77C8E70E970E1C5794ED5EAB41B1A /* ADJSdkClickHandler.h */,
+				2C5DB9DAE501C8E106B36C0C6D862164 /* ADJSdkClickHandler.m */,
+				C58630AD1A0256C9C0A64EEEF58E0754 /* ADJSessionFailure.h */,
+				4514281E7286D462A2072B8D19FC12CB /* ADJSessionFailure.m */,
+				C370B7EBF719ACDE477E094BED7B41D3 /* ADJSessionParameters.h */,
+				A36C5216CD788996B6801F2DE1CA2E93 /* ADJSessionParameters.m */,
+				8AE725D9E5D7DB8FF7A2090E8FF643EA /* ADJSessionSuccess.h */,
+				F65CAA7B8420260E4636ECDDC89B50B0 /* ADJSessionSuccess.m */,
+				B00D690F0ECCFDBE9FE17C53C07C1FB0 /* ADJSystemProfile.h */,
+				D62AD34611102CE28BCA586AF05D5F83 /* ADJSystemProfile.m */,
+				42844D7D5A27B7042BA166485903B038 /* ADJTimerCycle.h */,
+				6C89B589FEEFD2B4730BCB285EE5F3EF /* ADJTimerCycle.m */,
+				1F8F87B489CA8A8C478E918BF05674EE /* ADJTimerOnce.h */,
+				F8193512EF0B4C82CF2B352CAAEE5140 /* ADJTimerOnce.m */,
+				D7B00C932FD5BBCC457CA8D2AAAAC453 /* ADJUserDefaults.h */,
+				CDA7A6B73F45DEC899A8ADEE6C87A722 /* ADJUserDefaults.m */,
+				D122698681C387B3C34B7FB33FD43CD5 /* Adjust.h */,
+				DF6F86169B2C59270562609C9B790677 /* Adjust.m */,
+				138EAF75ABD721DC9CE9ABC65BE019D3 /* ADJUtil.h */,
+				05C891A8B44ACDB37F11718366984B20 /* ADJUtil.m */,
+				418FA3586F10DB93BE07B41ED1498085 /* NSData+ADJAdditions.h */,
+				99A6B556CECD6820A0326F4D6A8945A6 /* NSData+ADJAdditions.m */,
+				391B4B25AB704FDDC67A6C71FD70F1EF /* NSString+ADJAdditions.h */,
+				F32AD9E8550D5FC49DEC8814DC337DBA /* NSString+ADJAdditions.m */,
+				E19CAB7BB2BF64AC21F9BDB951030AA1 /* UIDevice+ADJAdditions.h */,
+				D8D0EF19CA1F93AA65652726F764DA09 /* UIDevice+ADJAdditions.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		6834AB448B090F09E11DE37A26A71DC4 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				55BC11564CC57456DF8FB7F3899F97CC /* LICENSE */,
+				A3665AAABA6A3A7CABD3BB480EE44BEE /* README.md */,
+				0F7EA8191E6BB7BBD835694E80D0CBB0 /* Rudder-Adjust.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		6E0E5E794A2A803AA160B6050D19596D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8F348E2B7E01F36BCBD63C4EB819FF6 /* Adjust */,
+				CACA020AF51F52E926BB2BAF61B18C3C /* FBSnapshotTestCase */,
+				0EDFE83CF91E89F3C33C92DF48DACFAE /* RudderSDKCore */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7A72E7D49569DB36CFFD7437645B2DA5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7E5097DD022F2EF8F2D9759BB7DD62F8 /* Foundation.framework */,
+				294647104E5033F445722ED5708CE30F /* QuartzCore.framework */,
+				CF99364A9E7DEE89A265C91CBBDE54A9 /* SystemConfiguration.framework */,
+				8D96BA20EFACFA6CFCD77BD698BA26A9 /* UIKit.framework */,
+				3FAE8DF231EF2B627862B609C069D129 /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8DD3149FC7427B55461CD49B2DC0A0FC /* Pods-Rudder-Adjust_Example */ = {
+			isa = PBXGroup;
+			children = (
+				414A6698DC8635CA09F45ADF7C4FB666 /* Pods-Rudder-Adjust_Example.modulemap */,
+				E99C50966191579640563B8855D80A7C /* Pods-Rudder-Adjust_Example-acknowledgements.markdown */,
+				FFAE34AE05A5322B606304FC704975FE /* Pods-Rudder-Adjust_Example-acknowledgements.plist */,
+				4750A7B25F71E87D4138A6A6C6A806DD /* Pods-Rudder-Adjust_Example-dummy.m */,
+				653417151573CF7B2E1DD61F198D7B04 /* Pods-Rudder-Adjust_Example-frameworks.sh */,
+				F9207011A87EC8557049054E987185F4 /* Pods-Rudder-Adjust_Example-Info.plist */,
+				5C9A6B136A4E08D9CAACD03BAAE29FF1 /* Pods-Rudder-Adjust_Example-umbrella.h */,
+				45FD3F8CA52D8575527B6BAF4911FB35 /* Pods-Rudder-Adjust_Example.debug.xcconfig */,
+				0ABBADF0DFD82B341DE122EA3CE3804C /* Pods-Rudder-Adjust_Example.release.xcconfig */,
+			);
+			name = "Pods-Rudder-Adjust_Example";
+			path = "Target Support Files/Pods-Rudder-Adjust_Example";
+			sourceTree = "<group>";
+		};
+		91F39C5DBBEE93AEC9F532744537F798 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				72013C059716AAC4946CED354D901C41 /* Rudder-Adjust.modulemap */,
+				1F22552ED0FEBE4FB51E2E7FC7449950 /* Rudder-Adjust.xcconfig */,
+				64C9153230D0AC57C03C4EBE34B5EDC1 /* Rudder-Adjust-dummy.m */,
+				D3429A489BE84BEEE9AA4560DBD02BBF /* Rudder-Adjust-Info.plist */,
+				95D8FFB995EC137E2569F742762A45E4 /* Rudder-Adjust-prefix.pch */,
+				9BDAC2F058010D3FA548B98F038759E4 /* Rudder-Adjust-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Rudder-Adjust";
+			sourceTree = "<group>";
+		};
+		95BC5BFEBDFB63F81C13803A2700C92A /* Rudder-Adjust */ = {
+			isa = PBXGroup;
+			children = (
+				8F89BC1D4460507EFACE5D0D03079B5C /* ReplaceMe.m */,
+				686D1B7EE09BF86FFD9E910E1A1ABAC5 /* RudderAdjustFactory.h */,
+				6F85981D1647FA958F6DC5888BA95328 /* RudderAdjustFactory.m */,
+				288227B695F0FE49D6DB06CAC0134093 /* RudderAdjustIntegration.h */,
+				72FD3E4083AAECCDCA6BDA8056B2357E /* RudderAdjustIntegration.m */,
+				6834AB448B090F09E11DE37A26A71DC4 /* Pod */,
+				91F39C5DBBEE93AEC9F532744537F798 /* Support Files */,
+			);
+			name = "Rudder-Adjust";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A8F348E2B7E01F36BCBD63C4EB819FF6 /* Adjust */ = {
+			isa = PBXGroup;
+			children = (
+				6792FDB1D6F2531199B6285BFA96AC8D /* Core */,
+				3F727B8F38BAF7F904F3779A3371422B /* Support Files */,
+			);
+			name = Adjust;
+			path = Adjust;
+			sourceTree = "<group>";
+		};
+		ABD4CF0BD1EDBAD2256606DE44EA6EC7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DD3149FC7427B55461CD49B2DC0A0FC /* Pods-Rudder-Adjust_Example */,
+				E87F9B461E7A416358A520D2B09E95F1 /* Pods-Rudder-Adjust_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C51E73A18A802C28BD02F8324C29050F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B07021B00CBFB5B859AE536ABF25FDB1 /* Adjust.framework */,
+				810C646160D7DB85560AC068094D499D /* RudderSDKCore.framework */,
+				7A72E7D49569DB36CFFD7437645B2DA5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CACA020AF51F52E926BB2BAF61B18C3C /* FBSnapshotTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				570ECDD4266D9554DF0DDDD5DD4B6E40 /* Core */,
+				DA30A345508E395643CD9B67ACC0C965 /* Support Files */,
+				4E1888CF87271C37849601AAD56EF53D /* SwiftSupport */,
+			);
+			name = FBSnapshotTestCase;
+			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				62AF1BABC5B29F75F045177602E0C156 /* Development Pods */,
+				C51E73A18A802C28BD02F8324C29050F /* Frameworks */,
+				6E0E5E794A2A803AA160B6050D19596D /* Pods */,
+				EBD341C955EBEBA95C4B286D751AD4EB /* Products */,
+				ABD4CF0BD1EDBAD2256606DE44EA6EC7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DA30A345508E395643CD9B67ACC0C965 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				19D16AD891E0C541E972F47E66D0ECB7 /* FBSnapshotTestCase.modulemap */,
+				C3771777D9246619EDA612D41116E5EE /* FBSnapshotTestCase.xcconfig */,
+				B2D364F540A41966B217DFEE9E7CC809 /* FBSnapshotTestCase-dummy.m */,
+				333B6E9A001C0D37F4635E871ABA51C5 /* FBSnapshotTestCase-Info.plist */,
+				B755AA974F73B6CACFB4475114D0035C /* FBSnapshotTestCase-prefix.pch */,
+				70A2259014B14B43E4D7F4D242C7F639 /* FBSnapshotTestCase-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FBSnapshotTestCase";
+			sourceTree = "<group>";
+		};
+		E87F9B461E7A416358A520D2B09E95F1 /* Pods-Rudder-Adjust_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				53F8909217D1C84531E1C74E7F2EA6B4 /* Pods-Rudder-Adjust_Tests.modulemap */,
+				922494CFC6862C00842B706C438AB769 /* Pods-Rudder-Adjust_Tests-acknowledgements.markdown */,
+				6C63966F11E835BBF7D11C52803BCBFF /* Pods-Rudder-Adjust_Tests-acknowledgements.plist */,
+				6124FABE08539D9FA18D6A40BBAB123F /* Pods-Rudder-Adjust_Tests-dummy.m */,
+				DDC473FC2D942B65AB9D5A6F551BFADE /* Pods-Rudder-Adjust_Tests-frameworks.sh */,
+				DFF833CDA526C1B691A76ABD480FF2CB /* Pods-Rudder-Adjust_Tests-Info.plist */,
+				15BC96BE2160BD51D45198F7679E3CBE /* Pods-Rudder-Adjust_Tests-umbrella.h */,
+				2EA967F3BD44951CC3399024E768296B /* Pods-Rudder-Adjust_Tests.debug.xcconfig */,
+				3C47051D70952E1B797B3A278D0D8EA7 /* Pods-Rudder-Adjust_Tests.release.xcconfig */,
+			);
+			name = "Pods-Rudder-Adjust_Tests";
+			path = "Target Support Files/Pods-Rudder-Adjust_Tests";
+			sourceTree = "<group>";
+		};
+		EBD341C955EBEBA95C4B286D751AD4EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FF5C62DF1E2D492F272FD7D2A1EF4A3 /* Adjust.framework */,
+				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */,
+				8D01B7A376089C48171C3BA8011A9D49 /* Pods_Rudder_Adjust_Example.framework */,
+				EBCBDF5A822575738946EF1EE9BE84A4 /* Pods_Rudder_Adjust_Tests.framework */,
+				8355F7DB0E3B2F7ADC7CA38370B74951 /* Rudder_Adjust.framework */,
+				EFEAE49ED83316D6ED977FFB218D8928 /* RudderSDKCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		384DE8A8021C5DA5E256BCFEC3D478A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */,
+				00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */,
+				C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */,
+				90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */,
+				40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */,
+				F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */,
+				D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */,
+				B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476C9F588DFB160A848ED861E25B666A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6F523BDF4336FFBBC0E07A4E0769126 /* DBPersistentManager.h in Headers */,
+				E5FFD0B62F5F724D178FE223DE3F6772 /* EventRepository.h in Headers */,
+				9B66C253E9F7F8B1E6291552FD0CA641 /* PagePropertyBuilder.h in Headers */,
+				E5AECC85A7126C1901FCDACA2580ECE8 /* RudderApp.h in Headers */,
+				10DA42A933665650494084EE7C2919F0 /* RudderClient.h in Headers */,
+				6D9005FF8BEF1B0ED3D5F01FAB842341 /* RudderConfig.h in Headers */,
+				998654E361066C42CF5113A4D33D7A48 /* RudderConfigBuilder.h in Headers */,
+				1A31A6DA04CFB9C083103252B1ABF56D /* RudderContext.h in Headers */,
+				EEF03BD7610ED82A5AF1E8DD79304CE1 /* RudderDBMessage.h in Headers */,
+				A68C400BB1591F121A8524FE268D3E5B /* RudderDeviceInfo.h in Headers */,
+				621D5C9CA735BD36748A3543C5D0F7DB /* RudderElementCache.h in Headers */,
+				C0D5D64FBB8DFED7F4E6331B129E5F3C /* RudderIntegration.h in Headers */,
+				98B9CBEAE54472168DD4FA21EC99C13A /* RudderIntegrationFactory.h in Headers */,
+				5B33997370AC1D4FDF90E3C37DEDC0D6 /* RudderLibraryInfo.h in Headers */,
+				2DF6AA00B89CD2EF3A30C5F513D96804 /* RudderLogger.h in Headers */,
+				0C2AFC2D62D226E59FA6B384D5043E01 /* RudderMessage.h in Headers */,
+				12CF310C1F22F9158A3556519F4A79E6 /* RudderMessageBuilder.h in Headers */,
+				07EBC135DE145B494F9232E2CD99453D /* RudderNetwork.h in Headers */,
+				6CA7FFD5D374E36C8BB101E536027483 /* RudderOption.h in Headers */,
+				00DD91E695ACD83382148BAFB029504F /* RudderOSInfo.h in Headers */,
+				E5210B58DAB223D5FB49283C8312EFEE /* RudderProperty.h in Headers */,
+				C898C810E18A8968B6DFDD2AA30F0011 /* RudderScreenInfo.h in Headers */,
+				9A05B7A2B731E9A609A5CC3AF2E30847 /* RudderSDKCore-umbrella.h in Headers */,
+				624CA20EB71DAD99FDAE547EE23B603E /* RudderSDKCore.h in Headers */,
+				0D144EEBB66468F0CA10F0F09026E100 /* RudderServerConfigManager.h in Headers */,
+				9CE4FFA0AAA905297A8B93B0B1FB5170 /* RudderServerConfigSource.h in Headers */,
+				B9DBF86382D5088F06AAE48881181615 /* RudderServerDestination.h in Headers */,
+				7C800215F77DC9935E79A16382E91A30 /* RudderServerDestinationDefinition.h in Headers */,
+				7B179521CB7B8F4C72B0125CFA9E0B0A /* RudderTraits.h in Headers */,
+				1929BFB56C84CEB7E526A0AC7962B611 /* RudderTraitsBuilder.h in Headers */,
+				E02BDC91C5C00B3869917AFA0D7D6CDE /* ScreenPropertyBuilder.h in Headers */,
+				E7E25E020C2EF59DD4ED6B78EF8FB262 /* TrackPropertyBuilder.h in Headers */,
+				EC938E3447D6A86129F5E9939452FE14 /* Utils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C46FCF70EC21D40D4D7FDEA77566E95 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86ACEDB769C3309B1762D56B53FBBAA4 /* ADJActivityHandler.h in Headers */,
+				47773D0737E0832A4694F56B12491A34 /* ADJActivityKind.h in Headers */,
+				2FBC39B55763C92F1588D772AFA68362 /* ADJActivityPackage.h in Headers */,
+				5284B31C8811FAE0AFF75E0E461A8A5B /* ADJActivityState.h in Headers */,
+				BF9D9565E9273A4188F5C37AFE443194 /* ADJAdjustFactory.h in Headers */,
+				5872AFFA287D01A293D36F46D869AA57 /* ADJAttribution.h in Headers */,
+				95E09AA44FF0BF248EB9BD22F2E6F7F4 /* ADJAttributionHandler.h in Headers */,
+				B5123BF8E6D64C6E3ED06B2510FEAA92 /* ADJBackoffStrategy.h in Headers */,
+				4FA859BCB168911CF59D5B8482B5BBE5 /* ADJConfig.h in Headers */,
+				F4A8BCDF6BBC2E5DD95799055601158D /* ADJDeviceInfo.h in Headers */,
+				174D325F46BB3CEA4DA23E9C025985FE /* ADJEvent.h in Headers */,
+				4C154E6615DD1F11E9B18C6CDDC4425F /* ADJEventFailure.h in Headers */,
+				BDB9C5C5C017EC3AAE8F278F842906FD /* ADJEventSuccess.h in Headers */,
+				9814B9ADB66311A286A8A7147813A56B /* ADJKeychain.h in Headers */,
+				1B747006FEDBA64A9328F76168EB79A0 /* ADJLogger.h in Headers */,
+				9A5549DBAD5667BE32A816DE91CBE8F6 /* ADJPackageBuilder.h in Headers */,
+				9D0B673A397E12EC45EA0E0E17D00F5C /* ADJPackageHandler.h in Headers */,
+				A57D2D6360F8D0C1F7C4A8880BDD7A2A /* ADJReachability.h in Headers */,
+				285BDB070401CD2261925C941D2160A8 /* ADJRequestHandler.h in Headers */,
+				9BE29AA177BC51E94A517CF0094A1DDA /* ADJResponseData.h in Headers */,
+				3041DCBDBEEA927A194E669C625B3FC6 /* ADJSdkClickHandler.h in Headers */,
+				1C81A1F55A21CC572A162D5BC4EAACB0 /* ADJSessionFailure.h in Headers */,
+				A04BF4EF05201D2E8E63288B67FACB74 /* ADJSessionParameters.h in Headers */,
+				C9E206C7A5D1DDD69EB4E393FA713F9F /* ADJSessionSuccess.h in Headers */,
+				E8D299110B1F2D1B6F081A071209AE84 /* ADJSystemProfile.h in Headers */,
+				D4754369A1E587E4553C0456F34295F8 /* ADJTimerCycle.h in Headers */,
+				DEF797DD98FEA5D153AA7E3A15A1F4C8 /* ADJTimerOnce.h in Headers */,
+				E3A7455477EB0E703DD065FBA0C3423C /* ADJUserDefaults.h in Headers */,
+				76683D9A540C37369E6F991FCAF16AF7 /* Adjust-umbrella.h in Headers */,
+				FAEE209AB39B2930F07660F11E4B8EA9 /* Adjust.h in Headers */,
+				74D9BC853A754F4C3764879C10E75A95 /* ADJUtil.h in Headers */,
+				83AA1583D8D6FF0EB3CEF3BA562B0FDD /* NSData+ADJAdditions.h in Headers */,
+				02BDA11D9F998FAB3A99FDB170E543A9 /* NSString+ADJAdditions.h in Headers */,
+				ECD7FD9E4EA65BFDD40E84204F65E114 /* UIDevice+ADJAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E709382254FBC2103B7678DD9D476C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C72DD32F7D77104EBC63DACDD2FDDD5 /* Pods-Rudder-Adjust_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6F0FF9183AE80B20369715C38A7EA5F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD73E52D9318720CC1125B1BE11632A3 /* Rudder-Adjust-umbrella.h in Headers */,
+				413990FC5955F60D9D6EF3CEBF4A6B7E /* RudderAdjustFactory.h in Headers */,
+				A556AA73836B04A690D9828D113795D7 /* RudderAdjustIntegration.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F55BDEF176E07DD0E2DDE67EEC2A71AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E25E4A1B2832B5DA4D7B56C008AF525 /* Pods-Rudder-Adjust_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5E2248C7D0C1BDB0FA338FF1C3784823 /* Pods-Rudder-Adjust_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7B03DED2BF105FE8DCEE2173347D108 /* Build configuration list for PBXNativeTarget "Pods-Rudder-Adjust_Tests" */;
+			buildPhases = (
+				79E709382254FBC2103B7678DD9D476C /* Headers */,
+				9047314CE715D76A09AE4D502F6F1A7A /* Sources */,
+				650BAFA10CB7B74F7F96348DE955150B /* Frameworks */,
+				E1D0A6AEE55B6364F26114E739B9527E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5327F0EBC1EE1774F7CBF43E4CE69D6 /* PBXTargetDependency */,
+				8CB8FB5DD9F92F8E9F7741CAFBC95B32 /* PBXTargetDependency */,
+			);
+			name = "Pods-Rudder-Adjust_Tests";
+			productName = "Pods-Rudder-Adjust_Tests";
+			productReference = EBCBDF5A822575738946EF1EE9BE84A4 /* Pods_Rudder_Adjust_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7111F362EA0D14BECD8B96EA1EAA5F79 /* Adjust */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F27B52F90D66B2625677B5D21B35CD00 /* Build configuration list for PBXNativeTarget "Adjust" */;
+			buildPhases = (
+				5C46FCF70EC21D40D4D7FDEA77566E95 /* Headers */,
+				E2A8AE7CFF721F92DF22F6571D84ACE4 /* Sources */,
+				E07EBC1AAB2BE0A5DDECF381019226BE /* Frameworks */,
+				981260AF08D83E07C0AB092AE54E789D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Adjust;
+			productName = Adjust;
+			productReference = 7FF5C62DF1E2D492F272FD7D2A1EF4A3 /* Adjust.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A38070E189561F257BBD5A0A55CACCCF /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */;
+			buildPhases = (
+				384DE8A8021C5DA5E256BCFEC3D478A9 /* Headers */,
+				A48201AC594B2E6B09C0EE0396BC1377 /* Sources */,
+				E581515110D66F94F80A6937831489A1 /* Frameworks */,
+				5CC655F1A6C7A45A9693160581076BAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBSnapshotTestCase;
+			productName = FBSnapshotTestCase;
+			productReference = 5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B25295473208069C86562546955EA53A /* Pods-Rudder-Adjust_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50BF980AA4984CD9B598C87551B2A388 /* Build configuration list for PBXNativeTarget "Pods-Rudder-Adjust_Example" */;
+			buildPhases = (
+				F55BDEF176E07DD0E2DDE67EEC2A71AD /* Headers */,
+				638A670B33EFF3B00905504E480D1592 /* Sources */,
+				EC7AF64E52DD5BFC126CB74E4B6DB963 /* Frameworks */,
+				E67D1C1D1A9CDE866BB6DDBCBA9437CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD9491421494E23895DADA560AC2C98A /* PBXTargetDependency */,
+				7E6C36E14DDF12067C363D6B6C499F29 /* PBXTargetDependency */,
+				5BFB3EAA1AA0B4280A159F8A465FAA9A /* PBXTargetDependency */,
+			);
+			name = "Pods-Rudder-Adjust_Example";
+			productName = "Pods-Rudder-Adjust_Example";
+			productReference = 8D01B7A376089C48171C3BA8011A9D49 /* Pods_Rudder_Adjust_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DAC7AD417BF0B88718D4F4F275A6096C /* Rudder-Adjust */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED3C767D970400107A086288761D5E2E /* Build configuration list for PBXNativeTarget "Rudder-Adjust" */;
+			buildPhases = (
+				E6F0FF9183AE80B20369715C38A7EA5F /* Headers */,
+				751FADFBB27196032D947081A48A7EAD /* Sources */,
+				2D0F3D97633F135A4E4D96996489804D /* Frameworks */,
+				88522D4D7B20592A4C14398712AE7012 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70EF4AF40A616FEC88D26A83E884F5AE /* PBXTargetDependency */,
+				BEE278D2213E036CF1E3E1162233053C /* PBXTargetDependency */,
+			);
+			name = "Rudder-Adjust";
+			productName = "Rudder-Adjust";
+			productReference = 8355F7DB0E3B2F7ADC7CA38370B74951 /* Rudder_Adjust.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F4244B316F94491A5B8E235C25A80263 /* RudderSDKCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC6AFFB01289B2E3AEB6380FAB07A984 /* Build configuration list for PBXNativeTarget "RudderSDKCore" */;
+			buildPhases = (
+				476C9F588DFB160A848ED861E25B666A /* Headers */,
+				672BAF241EBC884D9CDAA1297AB4A5B2 /* Sources */,
+				C79BFF9141FBDB24D5597E95CF68224D /* Frameworks */,
+				73516C919570D6307648CB87AF8A6646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RudderSDKCore;
+			productName = RudderSDKCore;
+			productReference = EFEAE49ED83316D6ED977FFB218D8928 /* RudderSDKCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = EBD341C955EBEBA95C4B286D751AD4EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7111F362EA0D14BECD8B96EA1EAA5F79 /* Adjust */,
+				98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */,
+				B25295473208069C86562546955EA53A /* Pods-Rudder-Adjust_Example */,
+				5E2248C7D0C1BDB0FA338FF1C3784823 /* Pods-Rudder-Adjust_Tests */,
+				DAC7AD417BF0B88718D4F4F275A6096C /* Rudder-Adjust */,
+				F4244B316F94491A5B8E235C25A80263 /* RudderSDKCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CC655F1A6C7A45A9693160581076BAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73516C919570D6307648CB87AF8A6646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88522D4D7B20592A4C14398712AE7012 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		981260AF08D83E07C0AB092AE54E789D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D0A6AEE55B6364F26114E739B9527E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E67D1C1D1A9CDE866BB6DDBCBA9437CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		638A670B33EFF3B00905504E480D1592 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184C08934D13EB938B8AAB5087FD7722 /* Pods-Rudder-Adjust_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		672BAF241EBC884D9CDAA1297AB4A5B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB7E57B96CC352C4A9CD9D95FED7035 /* DBPersistentManager.m in Sources */,
+				D4F1CFED89BA5D3A3711CC9EDE7C9D71 /* EventRepository.m in Sources */,
+				3055D548555C6342C54B17E6C8522180 /* PagePropertyBuilder.m in Sources */,
+				59C6FFEA65AD9E9261F38A2EE455840B /* RudderApp.m in Sources */,
+				D1A36274A2234065D31409889C45BD29 /* RudderClient.m in Sources */,
+				CB950BE2EDEE6E5B3660427E053E7661 /* RudderConfig.m in Sources */,
+				FD4D860955C21A24E58A1ABB8BF5A195 /* RudderConfigBuilder.m in Sources */,
+				5C5AA585E01E935C3D98B7EECD0CCC78 /* RudderContext.m in Sources */,
+				2E0B82C53C0A4E7FF5CA8ABC4712C382 /* RudderDBMessage.m in Sources */,
+				8DCE45273C6EFE1514D416CF2E8F4C40 /* RudderDeviceInfo.m in Sources */,
+				C4B6E011D79A4FEB68BC7A8058D423F2 /* RudderElementCache.m in Sources */,
+				0E1077B8977F88A11FB12E1BA0374D5E /* RudderLibraryInfo.m in Sources */,
+				325EEAC0C73B819D61B58A00B595F270 /* RudderLogger.m in Sources */,
+				6698A47376852D6B8704E013922D739B /* RudderMessage.m in Sources */,
+				3022C24F7EC1B241C8DF105EDFB4E875 /* RudderMessageBuilder.m in Sources */,
+				67BA23C1017955A2D8625DB3CEF1D246 /* RudderNetwork.m in Sources */,
+				888C9FD1802AB7DA3B32963C193E124E /* RudderOption.m in Sources */,
+				CB6A66E9D1D0673C8CE146AE8F6379D7 /* RudderOSInfo.m in Sources */,
+				CDAA23A0E0748625A5FBA22199C7C7AE /* RudderProperty.m in Sources */,
+				C524B9FD5E01300A382DDCDBBDCC0D1D /* RudderScreenInfo.m in Sources */,
+				BF79672EC6D1C790FC4422275EE9E709 /* RudderSDKCore-dummy.m in Sources */,
+				5D92DF7BAC7F6FB111821514BD3BF698 /* RudderServerConfigManager.m in Sources */,
+				3E2B01F18859B8428D7C2D6E80B71D23 /* RudderServerConfigSource.m in Sources */,
+				AB87D3BA8C09ABE3EECAEFAE9820ABC4 /* RudderServerDestination.m in Sources */,
+				DF12034B15E6D7C809BAF1624BBB72C7 /* RudderServerDestinationDefinition.m in Sources */,
+				1830D4357682B70842549F8911BCFFDD /* RudderTraits.m in Sources */,
+				2BFA0C4034D4C86B8CBEDAEB87DC6230 /* RudderTraitsBuilder.m in Sources */,
+				EE5CC8DA3E2D33C11B8713E7EF5E2D60 /* ScreenPropertyBuilder.m in Sources */,
+				2203456A6042275DF2635160D4189D8E /* TrackPropertyBuilder.m in Sources */,
+				3311A90BD931B45D68BB279B9F1ED514 /* Utils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		751FADFBB27196032D947081A48A7EAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA571808883946A9292A09238134909 /* ReplaceMe.m in Sources */,
+				981D6E28F469698DABD916558DE80821 /* Rudder-Adjust-dummy.m in Sources */,
+				45FB5E9913871B35BB55E8B853E7E3DE /* RudderAdjustFactory.m in Sources */,
+				DCC1959CFC6E27E20DFCB98600A6372B /* RudderAdjustIntegration.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9047314CE715D76A09AE4D502F6F1A7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6C778A1D15EA9979B3B461B8C19F8E7 /* Pods-Rudder-Adjust_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A48201AC594B2E6B09C0EE0396BC1377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */,
+				8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */,
+				E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */,
+				88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */,
+				9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */,
+				11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */,
+				2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */,
+				14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */,
+				A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2A8AE7CFF721F92DF22F6571D84ACE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8D10AB2094968B2D967C7617F54E59 /* ADJActivityHandler.m in Sources */,
+				FB3D6264DD0E3566713B8698B141A1A4 /* ADJActivityKind.m in Sources */,
+				C9180B057FCD87964E58D80F25ED18E7 /* ADJActivityPackage.m in Sources */,
+				44B44C782D6CED56F96AF992078FD9D5 /* ADJActivityState.m in Sources */,
+				3EDFF75AD1CCDE41184A00DF7D560C64 /* ADJAdjustFactory.m in Sources */,
+				24AE9D72FF05596A5914BC4F73FBB422 /* ADJAttribution.m in Sources */,
+				19F68EBC195CF4E1DAC92296F8E65AD0 /* ADJAttributionHandler.m in Sources */,
+				EA7554E304D1C764D09220608B84DAF8 /* ADJBackoffStrategy.m in Sources */,
+				82528F52713D54B19AE6E884DE0691B7 /* ADJConfig.m in Sources */,
+				332F5EDA848C0EAB12748AD5CF72C2D8 /* ADJDeviceInfo.m in Sources */,
+				C408BB878D86A7A8FEBAAC428EC131F1 /* ADJEvent.m in Sources */,
+				582B5377967C396ECEF49413402CC926 /* ADJEventFailure.m in Sources */,
+				010911A7D5BBA27B8656E3D7F63C2D3C /* ADJEventSuccess.m in Sources */,
+				E28854483B2EA4AB9691917BE93EFBF3 /* ADJKeychain.m in Sources */,
+				A2696237C7BDF2A95E2F206CBCA14FB6 /* ADJLogger.m in Sources */,
+				D3671634F0E0F028E24725ACB4F288AB /* ADJPackageBuilder.m in Sources */,
+				94E5C15D7F83B6CFC718CFA6D46876E5 /* ADJPackageHandler.m in Sources */,
+				D87330F0F0AE7B1680D5335F637A3FDC /* ADJReachability.m in Sources */,
+				F716C06AC087EB66557243DDE326F0BA /* ADJRequestHandler.m in Sources */,
+				79C18FD271B1405EC0C5652CA1B29DD4 /* ADJResponseData.m in Sources */,
+				D4BCBB7FC8A812EBA8AA014327A3CAE8 /* ADJSdkClickHandler.m in Sources */,
+				226E97722A9B99C57479300D6356002C /* ADJSessionFailure.m in Sources */,
+				B587F8FDE21D60FB0F77EB0CB0E52ADD /* ADJSessionParameters.m in Sources */,
+				DF7A440F3B508F0AAA9230641FD8BF95 /* ADJSessionSuccess.m in Sources */,
+				FE957645BF3D3FFC5A5477490AC04CE3 /* ADJSystemProfile.m in Sources */,
+				98BBE026EDDEC493251328E2278ABD49 /* ADJTimerCycle.m in Sources */,
+				379FBFCB1508B752A17E76A2E5681B4A /* ADJTimerOnce.m in Sources */,
+				E47E06AE669F3A1230278D8325F7E258 /* ADJUserDefaults.m in Sources */,
+				3E68CB804A634E04A0E7DEBA1CD0C4B7 /* Adjust-dummy.m in Sources */,
+				E6B237451A57C1BB843EF5CBB548ACDD /* Adjust.m in Sources */,
+				55E6F9A8E9FFA29A004ACCD7CB591C3F /* ADJUtil.m in Sources */,
+				B149C57609E01A346371700A32C72E89 /* NSData+ADJAdditions.m in Sources */,
+				4B4E0E2BAE2170D2D93FC980334DD272 /* NSString+ADJAdditions.m in Sources */,
+				50A48ED6AAF4FC26553CC0299034C07C /* UIDevice+ADJAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BFB3EAA1AA0B4280A159F8A465FAA9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RudderSDKCore;
+			target = F4244B316F94491A5B8E235C25A80263 /* RudderSDKCore */;
+			targetProxy = D44A511C0E112D23B21014F39CD9E5FB /* PBXContainerItemProxy */;
+		};
+		70EF4AF40A616FEC88D26A83E884F5AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Adjust;
+			target = 7111F362EA0D14BECD8B96EA1EAA5F79 /* Adjust */;
+			targetProxy = 63AB0A0E4017BF73B6C9832029A22CCC /* PBXContainerItemProxy */;
+		};
+		7E6C36E14DDF12067C363D6B6C499F29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Rudder-Adjust";
+			target = DAC7AD417BF0B88718D4F4F275A6096C /* Rudder-Adjust */;
+			targetProxy = FCFBA54DA2D19D54C8ED0D3FE3ED6252 /* PBXContainerItemProxy */;
+		};
+		8CB8FB5DD9F92F8E9F7741CAFBC95B32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Rudder-Adjust_Example";
+			target = B25295473208069C86562546955EA53A /* Pods-Rudder-Adjust_Example */;
+			targetProxy = A7CED9FD96A7D934D000038CD118D136 /* PBXContainerItemProxy */;
+		};
+		BEE278D2213E036CF1E3E1162233053C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RudderSDKCore;
+			target = F4244B316F94491A5B8E235C25A80263 /* RudderSDKCore */;
+			targetProxy = C7621F965670D551099E0772D39118BD /* PBXContainerItemProxy */;
+		};
+		DD9491421494E23895DADA560AC2C98A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Adjust;
+			target = 7111F362EA0D14BECD8B96EA1EAA5F79 /* Adjust */;
+			targetProxy = 137DE94F0F5AB7BA75BB7F2762C8E27D /* PBXContainerItemProxy */;
+		};
+		F5327F0EBC1EE1774F7CBF43E4CE69D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
+			targetProxy = C853A2B5ED77FDF1B7DC2AA0042A68DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		213B18E1E07FE7B98510B0224DAF9536 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4289C9403BFDE435C11C535682198BB5 /* Adjust.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Adjust/Adjust-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Adjust/Adjust-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Adjust/Adjust.modulemap";
+				PRODUCT_MODULE_NAME = Adjust;
+				PRODUCT_NAME = Adjust;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B692C36E19FFA7B307E0F796795EC8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BE659129F59B7EDAF3C242433A72966 /* RudderSDKCore.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RudderSDKCore/RudderSDKCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RudderSDKCore/RudderSDKCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RudderSDKCore/RudderSDKCore.modulemap";
+				PRODUCT_MODULE_NAME = RudderSDKCore;
+				PRODUCT_NAME = RudderSDKCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4AB0F26CE3028FBBBF104920D7E53926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45FD3F8CA52D8575527B6BAF4911FB35 /* Pods-Rudder-Adjust_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Rudder-Adjust_Example/Pods-Rudder-Adjust_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rudder-Adjust_Example/Pods-Rudder-Adjust_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		4DFB027BFD3D91D2CEAAC6E223C2258C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F22552ED0FEBE4FB51E2E7FC7449950 /* Rudder-Adjust.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Rudder-Adjust/Rudder-Adjust-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Rudder-Adjust/Rudder-Adjust-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Rudder-Adjust/Rudder-Adjust.modulemap";
+				PRODUCT_MODULE_NAME = Rudder_Adjust;
+				PRODUCT_NAME = Rudder_Adjust;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6981B49048575F8238B3C5B905C918E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3771777D9246619EDA612D41116E5EE /* FBSnapshotTestCase.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		982BD35AEFE20AA8914B4BA091B2E3CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BE659129F59B7EDAF3C242433A72966 /* RudderSDKCore.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RudderSDKCore/RudderSDKCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RudderSDKCore/RudderSDKCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RudderSDKCore/RudderSDKCore.modulemap";
+				PRODUCT_MODULE_NAME = RudderSDKCore;
+				PRODUCT_NAME = RudderSDKCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A0EC7A0E75E025368B80BCB46194A2D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F22552ED0FEBE4FB51E2E7FC7449950 /* Rudder-Adjust.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Rudder-Adjust/Rudder-Adjust-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Rudder-Adjust/Rudder-Adjust-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Rudder-Adjust/Rudder-Adjust.modulemap";
+				PRODUCT_MODULE_NAME = Rudder_Adjust;
+				PRODUCT_NAME = Rudder_Adjust;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B0D455C99B8E5FFEB16AA709651A4267 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4289C9403BFDE435C11C535682198BB5 /* Adjust.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Adjust/Adjust-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Adjust/Adjust-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Adjust/Adjust.modulemap";
+				PRODUCT_MODULE_NAME = Adjust;
+				PRODUCT_NAME = Adjust;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C0776EC9999C35231B4D9C4379E308A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EA967F3BD44951CC3399024E768296B /* Pods-Rudder-Adjust_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Rudder-Adjust_Tests/Pods-Rudder-Adjust_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rudder-Adjust_Tests/Pods-Rudder-Adjust_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CC195B2CF81CACF440CD537AD11AC70B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ABBADF0DFD82B341DE122EA3CE3804C /* Pods-Rudder-Adjust_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Rudder-Adjust_Example/Pods-Rudder-Adjust_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rudder-Adjust_Example/Pods-Rudder-Adjust_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DDBA79FB5DC0E42D1D1F86D8A559E2D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C47051D70952E1B797B3A278D0D8EA7 /* Pods-Rudder-Adjust_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Rudder-Adjust_Tests/Pods-Rudder-Adjust_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rudder-Adjust_Tests/Pods-Rudder-Adjust_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EE252C6C51286892441EE171776C7E81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3771777D9246619EDA612D41116E5EE /* FBSnapshotTestCase.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50BF980AA4984CD9B598C87551B2A388 /* Build configuration list for PBXNativeTarget "Pods-Rudder-Adjust_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AB0F26CE3028FBBBF104920D7E53926 /* Debug */,
+				CC195B2CF81CACF440CD537AD11AC70B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A38070E189561F257BBD5A0A55CACCCF /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE252C6C51286892441EE171776C7E81 /* Debug */,
+				6981B49048575F8238B3C5B905C918E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC6AFFB01289B2E3AEB6380FAB07A984 /* Build configuration list for PBXNativeTarget "RudderSDKCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				982BD35AEFE20AA8914B4BA091B2E3CA /* Debug */,
+				2B692C36E19FFA7B307E0F796795EC8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED3C767D970400107A086288761D5E2E /* Build configuration list for PBXNativeTarget "Rudder-Adjust" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0EC7A0E75E025368B80BCB46194A2D6 /* Debug */,
+				4DFB027BFD3D91D2CEAAC6E223C2258C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F27B52F90D66B2625677B5D21B35CD00 /* Build configuration list for PBXNativeTarget "Adjust" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				213B18E1E07FE7B98510B0224DAF9536 /* Debug */,
+				B0D455C99B8E5FFEB16AA709651A4267 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7B03DED2BF105FE8DCEE2173347D108 /* Build configuration list for PBXNativeTarget "Pods-Rudder-Adjust_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0776EC9999C35231B4D9C4379E308A6 /* Debug */,
+				DDBA79FB5DC0E42D1D1F86D8A559E2D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,37 @@
+PODS:
+  - Adjust (4.17.3):
+    - Adjust/Core (= 4.17.3)
+  - Adjust/Core (4.17.3)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - Rudder-Adjust (0.1.0):
+    - Adjust (~> 4.17.2)
+    - RudderSDKCore (~> 0.1.3)
+  - RudderSDKCore (0.1.3)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - Rudder-Adjust (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Adjust
+    - FBSnapshotTestCase
+    - RudderSDKCore
+
+EXTERNAL SOURCES:
+  Rudder-Adjust:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Adjust: d77428a8e5198af821a059856376b9f16debdcc7
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Rudder-Adjust: 258fb2aa79718c052230b0affaae5d2fa0857aad
+  RudderSDKCore: fc189bcda62ec88a11c5b3596fc724ab197206a2
+
+PODFILE CHECKSUM: d2188689e8d71c5e537e18c015984faeaf1771fc
+
+COCOAPODS: 1.8.3
