@@ -7,6 +7,8 @@
 //
 
 #import "RUDDERAppDelegate.h"
+#import <RudderAdjustFactory.h>
+
 
 @implementation RUDDERAppDelegate
 
@@ -19,6 +21,7 @@
     
     RudderConfigBuilder *configBuilder = [[RudderConfigBuilder alloc] init];
     [configBuilder withEndPointUrl:endPointUrl];
+    [configBuilder withFactory:[RudderAdjustFactory instance]];
     RudderClient *rudderClient = [RudderClient getInstance:writeKey config:[configBuilder build]];
     
     RudderMessageBuilder *messageBuilder = [[RudderMessageBuilder alloc] init];
