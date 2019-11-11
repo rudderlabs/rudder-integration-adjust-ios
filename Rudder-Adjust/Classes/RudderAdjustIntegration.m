@@ -20,19 +20,21 @@
         
         NSString *environment = ADJEnvironmentSandbox;
         
-        NSString *env = [config objectForKey:@"environment"];
-        if (env == nil) {
-            environment = ADJEnvironmentProduction;
-        } else {
-            if ([env isEqualToString:@"sandbox"]) {
-                environment = ADJEnvironmentSandbox;
-            } else {
-                environment = ADJEnvironmentProduction;
-            }
-        }
+//        NSString *env = [config objectForKey:@"environment"];
+//        if (env == nil) {
+//            environment = ADJEnvironmentProduction;
+//        } else {
+//            if ([env isEqualToString:@"sandbox"]) {
+//                environment = ADJEnvironmentSandbox;
+//            } else {
+//                environment = ADJEnvironmentProduction;
+//            }
+//        }
         
         if (apiToken != nil) {
-            ADJConfig *adjustConfig = [ADJConfig configWithAppToken:apiToken environment:environment];
+            ADJConfig *adjustConfig = [ADJConfig configWithAppToken:apiToken
+                                                        environment:environment];
+            [adjustConfig setLogLevel:ADJLogLevelVerbose];
             [adjustConfig setEventBufferingEnabled:YES];
             [adjustConfig setDelegate:self];
             [Adjust appDidLaunch:adjustConfig];
@@ -40,12 +42,14 @@
             // create eventmap
             NSArray *eventArray = [config objectForKey:@"eventTokenMap"];
             if (eventArray != nil && eventArray.count > 0) {
+                NSMutableDictionary *tempDict = [[NSMutableDictionary alloc] init];
                 for (NSDictionary *eventDict in eventArray) {
                     NSString *from = [eventDict objectForKey:@"from"];
                     NSString *to  = [eventDict objectForKey:@"to"];
                     
-                    [self.eventMap setValue:to forKey:from];
+                    [tempDict setValue:to forKey:from];
                 }
+                self.eventMap = tempDict;
             }
         }
     }

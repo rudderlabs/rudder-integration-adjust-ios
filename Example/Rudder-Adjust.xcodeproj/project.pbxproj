@@ -248,6 +248,9 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = arnab;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = GTGKNDBD23;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -545,11 +548,12 @@
 			baseConfigurationReference = 55E79A7DC4138325D1273E13 /* Pods-Rudder-Adjust_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GTGKNDBD23;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Rudder-Adjust/Rudder-Adjust-Prefix.pch";
 				INFOPLIST_FILE = "Rudder-Adjust/Rudder-Adjust-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.torpedolabs.wynn.wscci.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
@@ -561,11 +565,12 @@
 			baseConfigurationReference = 0C2B2F59B1790CB487E088F3 /* Pods-Rudder-Adjust_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GTGKNDBD23;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Rudder-Adjust/Rudder-Adjust-Prefix.pch";
 				INFOPLIST_FILE = "Rudder-Adjust/Rudder-Adjust-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.torpedolabs.wynn.wscci.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;

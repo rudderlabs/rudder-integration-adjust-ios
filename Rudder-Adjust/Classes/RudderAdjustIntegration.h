@@ -6,8 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <RudderSDKCore/RudderIntegration.h>
-#import <RudderSDKCore/RudderClient.h>
+#import "RudderIntegration.h"
+#import "RudderClient.h"
 #import <Adjust/Adjust.h>
 
 NS_ASSUME_NONNULL_BEGIN

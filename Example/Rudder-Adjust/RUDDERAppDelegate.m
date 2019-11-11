@@ -7,6 +7,7 @@
 //
 
 #import "RUDDERAppDelegate.h"
+#import <RudderSDKCore/RudderClient.h>
 #import <RudderAdjustFactory.h>
 
 
@@ -16,17 +17,22 @@
 {
     // Override point for customization after application launch.
     
-    NSString *writeKey = @"";
-    NSString *endPointUrl = @"";
+    NSString *writeKey = @"1SEkFBSRyXIUWmPoOpfcHiKEmOR";
+    NSString *endPointUrl = @"https://d018f0e9.ngrok.io";
     
     RudderConfigBuilder *configBuilder = [[RudderConfigBuilder alloc] init];
     [configBuilder withEndPointUrl:endPointUrl];
     [configBuilder withFactory:[RudderAdjustFactory instance]];
     RudderClient *rudderClient = [RudderClient getInstance:writeKey config:[configBuilder build]];
     
-    RudderMessageBuilder *messageBuilder = [[RudderMessageBuilder alloc] init];
-    [messageBuilder setEventName:@""];
-    [rudderClient trackMessage:[messageBuilder build]];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@"processor started");
+        
+        usleep(10000000);
+        [rudderClient track:@"level_up"];
+        [rudderClient track:@"daily_rewards_claim"];
+        [rudderClient track:@"revenue"];
+    });
     
     return YES;
 }
