@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Rudder-Adjust'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Privacy and Security focused Segment-alternative. Adjust Native SDK integration support.'
 
   s.description      = <<-DESC
@@ -17,6 +17,6 @@ Rudder is a platform for collecting, storing and routing customer event data to 
 
   s.source_files = 'Rudder-Adjust/Classes/**/*'
 
-  s.dependency 'RudderSDKCore', '~> 0.1.3'
+  s.dependency 'RudderSDKCore'
   s.dependency 'Adjust', '~> 4.17.2'
 end
