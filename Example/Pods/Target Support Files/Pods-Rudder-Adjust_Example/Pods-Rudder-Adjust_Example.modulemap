@@ -1,6 +1,0 @@
-framework module Pods_Rudder_Adjust_Example {
-  umbrella header "Pods-Rudder-Adjust_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

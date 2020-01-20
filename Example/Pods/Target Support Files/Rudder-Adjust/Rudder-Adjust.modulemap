@@ -1,6 +1,0 @@
-framework module Rudder_Adjust {
-  umbrella header "Rudder-Adjust-umbrella.h"
-
-  export *
-  module * { export * }
-}
