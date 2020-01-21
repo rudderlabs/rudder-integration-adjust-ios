@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import "RudderIntegration.h"
 #import "RudderClient.h"
+#import "RudderLogger.h"
 #import <Adjust/Adjust.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -18,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) RudderClient *client;
 @property (nonatomic, strong) NSMutableDictionary<NSString*, NSString*>* eventMap;
 
-- (instancetype)initWithConfig:(NSDictionary *)config withAnalytics:(RudderClient *)client;
+- (instancetype)initWithConfig:(NSDictionary *)config withAnalytics:(RudderClient *)client withRudderConfig:(RudderConfig*) rudderConfig;
 
 @end
 

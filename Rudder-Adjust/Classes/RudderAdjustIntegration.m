@@ -11,36 +11,28 @@
 
 #pragma mark - Initialization
 
-- (instancetype)initWithConfig:(NSDictionary *)config withAnalytics:(RudderClient *)client {
-    if (self == [super init]) {
+- (instancetype)initWithConfig:(NSDictionary *)config
+                 withAnalytics:(nonnull RudderClient *)client
+              withRudderConfig:(nonnull RudderConfig *)rudderConfig{
+    self = [super init];
+    if (self) {
         self.config = config;
         self.client = client;
         
-        NSString *apiToken = [config objectForKey:@"apiToken"];
-        
-        NSString *environment = ADJEnvironmentSandbox;
-        
-//        NSString *env = [config objectForKey:@"environment"];
-//        if (env == nil) {
-//            environment = ADJEnvironmentProduction;
-//        } else {
-//            if ([env isEqualToString:@"sandbox"]) {
-//                environment = ADJEnvironmentSandbox;
-//            } else {
-//                environment = ADJEnvironmentProduction;
-//            }
-//        }
-        
+        NSString *apiToken = [config objectForKey:@"appToken"];
+        NSString *environment = ADJEnvironmentProduction;
+        if (rudderConfig.logLevel >= 4) {
+            environment = ADJEnvironmentSandbox;
+        }
         if (apiToken != nil) {
-            ADJConfig *adjustConfig = [ADJConfig configWithAppToken:apiToken
-                                                        environment:environment];
-            [adjustConfig setLogLevel:ADJLogLevelVerbose];
+            ADJConfig *adjustConfig = [ADJConfig configWithAppToken:apiToken environment:environment];
+            [adjustConfig setLogLevel:rudderConfig.logLevel >= 4 ? ADJLogLevelVerbose : ADJLogLevelError];
             [adjustConfig setEventBufferingEnabled:YES];
             [adjustConfig setDelegate:self];
             [Adjust appDidLaunch:adjustConfig];
             
             // create eventmap
-            NSArray *eventArray = [config objectForKey:@"eventTokenMap"];
+            NSArray *eventArray = [config objectForKey:@"customMappings"];
             if (eventArray != nil && eventArray.count > 0) {
                 NSMutableDictionary *tempDict = [[NSMutableDictionary alloc] init];
                 for (NSDictionary *eventDict in eventArray) {
@@ -60,30 +52,48 @@
     if (self.eventMap == nil) {
         return;
     }
-    
-    NSString *adjEventToken = [self.eventMap objectForKey:message.event];
-    if (adjEventToken != nil) {
-        ADJEvent *event = [[ADJEvent alloc] initWithEventToken:adjEventToken];
-        [event addCallbackParameter:@"type" value:message.type];
-        NSDictionary *eventProperties = message.properties;
-        if (eventProperties != nil) {
-            for (NSString *key in [eventProperties allKeys]) {
-                [event addPartnerParameter:key value:[eventProperties objectForKey:key]];
+    if([message.type isEqualToString:@"identify"]) {
+        [self setPartnerParams:message];
+    } else if ([message.type isEqualToString:@"track"]) {
+        NSString *adjEventToken = [self.eventMap objectForKey:message.event];
+        if (adjEventToken != nil) {
+            [self setPartnerParams:message];
+            ADJEvent *event = [[ADJEvent alloc] initWithEventToken:adjEventToken];
+            NSDictionary *eventProperties = message.properties;
+            if (eventProperties != nil) {
+                for (NSString *key in [eventProperties allKeys]) {
+                    [event addCallbackParameter:key value:[NSString stringWithFormat:@"%@", [eventProperties objectForKey:key]]];
+                }
+                NSNumber *total = [eventProperties objectForKey:@"revenue"];
+                NSString *currency = [eventProperties objectForKey:@"currency"];
+                if (total != nil && currency != nil) {
+                    [event setRevenue:[total doubleValue] currency:currency];
+                }
             }
-            NSNumber *total = [eventProperties objectForKey:@"total"];
-            NSString *currency = [eventProperties objectForKey:@"currency"];
-            if (total != nil && currency != nil) {
-                [event setRevenue:[total doubleValue] currency:currency];
+            NSDictionary *userProperties = message.userProperties;
+            if (userProperties != nil) {
+                for (NSString *key in [userProperties allKeys]) {
+                    [event addCallbackParameter:key value:[NSString stringWithFormat:@"%@", [userProperties objectForKey:key]]];
+                }
             }
+            [Adjust trackEvent:event];
         }
-        NSDictionary *userProperties = message.userProperties;
-        if (userProperties != nil) {
-            for (NSString *key in [userProperties allKeys]) {
-                [event addCallbackParameter:key value:[userProperties objectForKey:key]];
-            }
-        }
-        [Adjust trackEvent:event];
+    } else if ([message.type isEqualToString:@"screen"]) {
+        [RudderLogger logWarn:@"MessageType is not supported"];
+    } else {
+        [RudderLogger logWarn:@"MessageType is not specified"];
     }
+}
+
+-(void) setPartnerParams:(RudderMessage*) message {
+    [Adjust addSessionPartnerParameter:@"anonymousId" value:message.anonymousId];
+    if (message.userId != nil && ![message.userId isEqualToString:@""]) {
+        [Adjust addSessionPartnerParameter:@"userId" value:message.userId];
+    }
+}
+
+- (void)reset {
+    [Adjust resetSessionPartnerParameters];
 }
 
 @end

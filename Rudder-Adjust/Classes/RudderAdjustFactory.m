@@ -19,18 +19,13 @@
     return sharedInstance;
 }
 
-- (instancetype)init
-{
-    self = [super init];
-    return self;
-}
-
-- (nonnull id<RudderIntegration>)initiate:(nonnull NSDictionary *)config client:(nonnull RudderClient *)client {
-    return [[RudderAdjustIntegration alloc] initWithConfig:config withAnalytics:client];
-}
-
 - (nonnull NSString *)key {
-    return @"ADJ";
+    return @"Adjust";
 }
+
+- (nonnull id<RudderIntegration>)initiate:(nonnull NSDictionary *)config client:(nonnull RudderClient *)client rudderConfig:(nonnull RudderConfig *)rudderConfig {
+    return [[RudderAdjustIntegration alloc] initWithConfig:config withAnalytics:client withRudderConfig:rudderConfig];
+}
+
 
 @end
