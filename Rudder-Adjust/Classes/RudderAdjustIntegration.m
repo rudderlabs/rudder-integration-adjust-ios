@@ -20,29 +20,43 @@
         self.client = client;
         
         NSString *apiToken = [config objectForKey:@"appToken"];
-        NSString *environment = ADJEnvironmentProduction;
-        if (rudderConfig.logLevel >= 4) {
-            environment = ADJEnvironmentSandbox;
+        // create eventmap
+        NSArray *eventArray = [config objectForKey:@"customMappings"];
+        if (eventArray != nil && eventArray.count > 0) {
+            NSMutableDictionary *tempDict = [[NSMutableDictionary alloc] init];
+            for (NSDictionary *eventDict in eventArray) {
+                NSString *from = [eventDict objectForKey:@"from"];
+                NSString *to  = [eventDict objectForKey:@"to"];
+                
+                [tempDict setValue:to forKey:from];
+            }
+            self.eventMap = tempDict;
         }
-        if (apiToken != nil) {
+        NSNumber *delayTime = [config objectForKey:@"delay"];
+        double delay = 0;
+        if (delayTime != nil) {
+            delay = [delayTime doubleValue];
+        }
+        if (delay < 0) {
+            delay = 0;
+        } else if (delay > 10) {
+            delay = 10;
+        }
+        
+        if (apiToken != nil && ![apiToken isEqualToString:@""]) {
+            NSString *environment = ADJEnvironmentProduction;
+            if (rudderConfig.logLevel >= 4) {
+                environment = ADJEnvironmentSandbox;
+            }
+            
             ADJConfig *adjustConfig = [ADJConfig configWithAppToken:apiToken environment:environment];
             [adjustConfig setLogLevel:rudderConfig.logLevel >= 4 ? ADJLogLevelVerbose : ADJLogLevelError];
             [adjustConfig setEventBufferingEnabled:YES];
             [adjustConfig setDelegate:self];
-            [Adjust appDidLaunch:adjustConfig];
-            
-            // create eventmap
-            NSArray *eventArray = [config objectForKey:@"customMappings"];
-            if (eventArray != nil && eventArray.count > 0) {
-                NSMutableDictionary *tempDict = [[NSMutableDictionary alloc] init];
-                for (NSDictionary *eventDict in eventArray) {
-                    NSString *from = [eventDict objectForKey:@"from"];
-                    NSString *to  = [eventDict objectForKey:@"to"];
-                    
-                    [tempDict setValue:to forKey:from];
-                }
-                self.eventMap = tempDict;
+            if (delay > 0) {
+                [adjustConfig setDelayStart:delay];
             }
+            [Adjust appDidLaunch:adjustConfig];
         }
     }
     return self;
