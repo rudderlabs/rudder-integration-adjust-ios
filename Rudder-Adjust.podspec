@@ -10,7 +10,7 @@ Rudder is a platform for collecting, storing and routing customer event data to 
   s.homepage         = 'https://github.com/rudderlabs/rudder-integration-adjust-ios'
   s.license          = { :type => "Apache", :file => "LICENSE" }
   s.author           = { 'Rudderlabs' => 'arnab@rudderlabs.com' }
-  s.source           = { :git => 'https://github.com/rudderlabs/rudder-integration-adjust-ios.git' }
+  s.source           = { :git => 'https://github.com/rudderlabs/rudder-integration-adjust-ios.git', :commit => '03df246d2319165c7131c8019523d33e219d6f5f' }
   s.platform         = :ios, "9.0"
 
   s.ios.deployment_target = '8.0'
