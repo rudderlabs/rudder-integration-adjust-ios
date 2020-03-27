@@ -7,7 +7,7 @@
 //
 
 #import "RUDDERAppDelegate.h"
-#import <RudderSDKCore/RudderClient.h>
+#import <Rudder/Rudder.h>
 #import <RudderAdjustFactory.h>
 
 
@@ -22,7 +22,7 @@
     
     RudderConfigBuilder *configBuilder = [[RudderConfigBuilder alloc] init];
     [configBuilder withEndPointUrl:endPointUrl];
-    [configBuilder withLoglevel:4];
+    [configBuilder withLoglevel:RudderLogLevelDebug];
     [configBuilder withFactory:[RudderAdjustFactory instance]];
     RudderClient *rudderClient = [RudderClient getInstance:writeKey config:[configBuilder build]];
     
