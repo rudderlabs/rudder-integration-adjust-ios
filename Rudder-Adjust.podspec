@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Rudder-Adjust'
-  s.version          = '0.1.1-beta.1'
+  s.version          = '0.1.2'
   s.summary          = 'Privacy and Security focused Segment-alternative. Adjust Native SDK integration support.'
 
   s.description      = <<-DESC
@@ -10,13 +10,13 @@ Rudder is a platform for collecting, storing and routing customer event data to 
   s.homepage         = 'https://github.com/rudderlabs/rudder-integration-adjust-ios'
   s.license          = { :type => "Apache", :file => "LICENSE" }
   s.author           = { 'Rudderlabs' => 'arnab@rudderlabs.com' }
-  s.source           = { :git => 'https://github.com/rudderlabs/rudder-integration-adjust-ios.git', :commit => '03df246d2319165c7131c8019523d33e219d6f5f' }
+  s.source           = { :git => 'https://github.com/rudderlabs/rudder-integration-adjust-ios.git', :tag => 'v0.1.2' }
   s.platform         = :ios, "9.0"
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'Rudder-Adjust/Classes/**/*'
 
-  s.dependency 'Rudder', '1.0.1-beta.4'
+  s.dependency 'Rudder', '~> 1.0.1'
   s.dependency 'Adjust', '~> 4.17.2'
 end

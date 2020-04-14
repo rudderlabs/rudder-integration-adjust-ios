@@ -21,7 +21,7 @@
     NSString *endPointUrl = @"https://843fa4c8.ngrok.io";
     
     RudderConfigBuilder *configBuilder = [[RudderConfigBuilder alloc] init];
-    [configBuilder withEndPointUrl:endPointUrl];
+    [configBuilder withDataPlaneUrl:endPointUrl];
     [configBuilder withLoglevel:RudderLogLevelDebug];
     [configBuilder withFactory:[RudderAdjustFactory instance]];
     RudderClient *rudderClient = [RudderClient getInstance:writeKey config:[configBuilder build]];

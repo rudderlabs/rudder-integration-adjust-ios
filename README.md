@@ -14,16 +14,16 @@ Released under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 2. Rudder-Adjust is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Rudder-Adjust', '0.1.1-beta.1'
+pod 'Rudder-Adjust', '0.1.2'
 ```
 
 ## Initialize ```RudderClient```
 Put this code in your ```AppDelegate.m``` file under the method ```didFinishLaunchingWithOptions```
 ```
 RudderConfigBuilder *builder = [[RudderConfigBuilder alloc] init];
-[builder withEndPointUrl:<YOUR_DATA_PLANE_URL>];
+[builder withDataPlaneUrl:<YOUR_DATA_PLANE_URL>];
 [builder withFactory:[RudderAdjustFactory instance]];
-[RudderClient getInstance:YOUR_WRITE_KEY config:[builder build]];
+[RudderClient getInstance:<YOUR_WRITE_KEY> config:[builder build]];
 ```
 
 ## Send Events
