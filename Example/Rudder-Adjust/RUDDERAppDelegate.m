@@ -20,11 +20,11 @@
     NSString *writeKey = @"1WC1fQ3nIuFlZcKYCN2zLirPq4D";
     NSString *endPointUrl = @"https://843fa4c8.ngrok.io";
     
-    RudderConfigBuilder *configBuilder = [[RudderConfigBuilder alloc] init];
+    RSConfigBuilder *configBuilder = [[RSConfigBuilder alloc] init];
     [configBuilder withDataPlaneUrl:endPointUrl];
-    [configBuilder withLoglevel:RudderLogLevelDebug];
+    [configBuilder withLoglevel:RSLogLevelDebug];
     [configBuilder withFactory:[RudderAdjustFactory instance]];
-    RudderClient *rudderClient = [RudderClient getInstance:writeKey config:[configBuilder build]];
+    RSClient *rudderClient = [RSClient getInstance:writeKey config:[configBuilder build]];
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSLog(@"processor started");

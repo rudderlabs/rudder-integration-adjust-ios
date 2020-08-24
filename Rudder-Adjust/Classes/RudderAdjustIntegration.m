@@ -12,8 +12,8 @@
 #pragma mark - Initialization
 
 - (instancetype)initWithConfig:(NSDictionary *)config
-                 withAnalytics:(nonnull RudderClient *)client
-              withRudderConfig:(nonnull RudderConfig *)rudderConfig{
+                 withAnalytics:(nonnull RSClient *)client
+              withRudderConfig:(nonnull RSConfig *)rudderConfig{
     self = [super init];
     if (self) {
         self.config = config;
@@ -62,7 +62,7 @@
     return self;
 }
 
-- (void)dump:(nonnull RudderMessage *)message {
+- (void)dump:(nonnull RSMessage *)message {
     if (self.eventMap == nil) {
         return;
     }
@@ -93,13 +93,13 @@
             [Adjust trackEvent:event];
         }
     } else if ([message.type isEqualToString:@"screen"]) {
-        [RudderLogger logWarn:@"MessageType is not supported"];
+        [RSLogger logWarn:@"MessageType is not supported"];
     } else {
-        [RudderLogger logWarn:@"MessageType is not specified"];
+        [RSLogger logWarn:@"MessageType is not specified"];
     }
 }
 
--(void) setPartnerParams:(RudderMessage*) message {
+-(void) setPartnerParams:(RSMessage*) message {
     [Adjust addSessionPartnerParameter:@"anonymousId" value:message.anonymousId];
     if (message.userId != nil && ![message.userId isEqualToString:@""]) {
         [Adjust addSessionPartnerParameter:@"userId" value:message.userId];
