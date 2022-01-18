@@ -2,7 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Rudder-Adjust.xcodeproj">
+      location = "group:RudderAdjust.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Examples/SampleiOSObjC/SampleiOSObjC.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

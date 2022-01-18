@@ -7,8 +7,8 @@
 //
 
 #import "RUDDERAppDelegate.h"
-#import <Rudder/Rudder.h>
-#import <RudderAdjustFactory.h>
+//#import <Rudder/Rudder.h>
+//#import <RudderAdjustFactory.h>
 
 
 @implementation RUDDERAppDelegate
@@ -20,7 +20,7 @@
     NSString *writeKey = @"1WC1fQ3nIuFlZcKYCN2zLirPq4D";
     NSString *endPointUrl = @"https://843fa4c8.ngrok.io";
     
-    RSConfigBuilder *configBuilder = [[RSConfigBuilder alloc] init];
+    /*RSConfigBuilder *configBuilder = [[RSConfigBuilder alloc] init];
     [configBuilder withDataPlaneUrl:endPointUrl];
     [configBuilder withLoglevel:RSLogLevelDebug];
     [configBuilder withFactory:[RudderAdjustFactory instance]];
@@ -33,7 +33,7 @@
         [rudderClient track:@"level_up"];
         [rudderClient track:@"daily_rewards_claim"];
         [rudderClient track:@"revenue"];
-    });
+    });*/
     
     return YES;
 }
