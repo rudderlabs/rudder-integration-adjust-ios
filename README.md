@@ -26,7 +26,7 @@ RSConfigBuilder *builder = [[RSConfigBuilder alloc] init];
 
 ## Send Events
 
-Follow the steps from the [documentation](https://docs.rudderstack.com/destinations/adjust) to send the events.
+Follow the steps from the [documentation](https://www.rudderstack.com/docs/destinations/streaming-destinations/adjust/) to send the events.
 
 ## Contact Us
 
