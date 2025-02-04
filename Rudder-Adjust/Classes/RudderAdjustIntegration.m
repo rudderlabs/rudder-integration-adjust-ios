@@ -94,8 +94,6 @@
             }
             [Adjust trackEvent:event];
         }
-    } else if ([message.type isEqualToString:@"screen"]) {
-        [RSLogger logWarn:@"MessageType is not supported"];
     } else {
         [RSLogger logWarn:@"MessageType is not specified"];
     }
