@@ -40,12 +40,28 @@
             }
             
             ADJConfig *adjustConfig = [[ADJConfig alloc] initWithAppToken:apiToken environment:environment];
-            [adjustConfig setLogLevel:rudderConfig.logLevel >= 4 ? ADJLogLevelVerbose : ADJLogLevelError];
+            [self setLogLevel:rudderConfig.logLevel withAdjustConfig:adjustConfig];
             [adjustConfig setDelegate:self];
             [Adjust initSdk:adjustConfig];
         }
     }
     return self;
+}
+
+- (void)setLogLevel:(int) loglevel withAdjustConfig:(ADJConfig *)adjustConfig {
+    if (loglevel == RSLogLevelVerbose) {
+        [adjustConfig setLogLevel:ADJLogLevelVerbose];
+    } else if (loglevel == RSLogLevelDebug) {
+        [adjustConfig setLogLevel:ADJLogLevelDebug];
+    } else if (loglevel == RSLogLevelInfo) {
+        [adjustConfig setLogLevel:ADJLogLevelInfo];
+    } else if (loglevel == RSLogLevelWarning) {
+        [adjustConfig setLogLevel:ADJLogLevelWarn];
+    } else if (loglevel == RSLogLevelError) {
+        [adjustConfig setLogLevel:ADJLogLevelError];
+    } else {
+        [adjustConfig setLogLevel:ADJLogLevelSuppress];
+    }
 }
 
 - (void)dump:(nonnull RSMessage *)message {
