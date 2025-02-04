@@ -32,16 +32,16 @@
             }
             self.eventMap = tempDict;
         }
-        NSNumber *delayTime = [config objectForKey:@"delay"];
-        double delay = 0;
-        if (delayTime != nil) {
-            delay = [delayTime doubleValue];
-        }
-        if (delay < 0) {
-            delay = 0;
-        } else if (delay > 10) {
-            delay = 10;
-        }
+//        NSNumber *delayTime = [config objectForKey:@"delay"];
+//        double delay = 0;
+//        if (delayTime != nil) {
+//            delay = [delayTime doubleValue];
+//        }
+//        if (delay < 0) {
+//            delay = 0;
+//        } else if (delay > 10) {
+//            delay = 10;
+//        }
         
         if (apiToken != nil && ![apiToken isEqualToString:@""]) {
             NSString *environment = ADJEnvironmentProduction;
@@ -49,14 +49,15 @@
                 environment = ADJEnvironmentSandbox;
             }
             
-            ADJConfig *adjustConfig = [ADJConfig configWithAppToken:apiToken environment:environment];
+            ADJConfig *adjustConfig = [[ADJConfig alloc] initWithAppToken:apiToken environment:environment];//[ADJConfig configWithAppToken:apiToken environment:environment];
             [adjustConfig setLogLevel:rudderConfig.logLevel >= 4 ? ADJLogLevelVerbose : ADJLogLevelError];
-            [adjustConfig setEventBufferingEnabled:YES];
+//            [adjustConfig setEventBufferingEnabled:YES];
             [adjustConfig setDelegate:self];
-            if (delay > 0) {
-                [adjustConfig setDelayStart:delay];
-            }
-            [Adjust appDidLaunch:adjustConfig];
+//            if (delay > 0) {
+//                [adjustConfig setDelayStart:delay];
+//            }
+//            [Adjust appDidLaunch:adjustConfig];
+            [Adjust initSdk:adjustConfig];
         }
     }
     return self;
@@ -100,14 +101,19 @@
 }
 
 -(void) setPartnerParams:(RSMessage*) message {
-    [Adjust addSessionPartnerParameter:@"anonymousId" value:message.anonymousId];
+    [Adjust addGlobalPartnerParameter:@"anonymousId" forKey:message.anonymousId];
     if (message.userId != nil && ![message.userId isEqualToString:@""]) {
-        [Adjust addSessionPartnerParameter:@"userId" value:message.userId];
+        [Adjust addGlobalPartnerParameter:@"userId" forKey:message.userId];
     }
 }
 
 - (void)reset {
-    [Adjust resetSessionPartnerParameters];
+    [Adjust removeGlobalPartnerParameters];
 }
+
+- (void)flush { 
+    
+}
+
 
 @end
