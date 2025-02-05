@@ -22,7 +22,8 @@
     
     RSConfigBuilder *configBuilder = [[RSConfigBuilder alloc] init];
     [configBuilder withDataPlaneUrl:dataPlaneUrl];
-    [configBuilder withLoglevel:RSLogLevelDebug];
+    [configBuilder withLoglevel:RSLogLevelVerbose];
+    [configBuilder withTrackLifecycleEvens:false];
     [configBuilder withFactory:[RudderAdjustFactory instance]];
     RSClient *rudderClient = [RSClient getInstance:writeKey config:[configBuilder build]];
     
