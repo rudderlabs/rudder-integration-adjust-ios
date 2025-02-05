@@ -72,28 +72,30 @@
         [self setPartnerParams:message];
     } else if ([message.type isEqualToString:@"track"]) {
         NSString *adjEventToken = [self.eventMap objectForKey:message.event];
-        if (adjEventToken != nil) {
-            [self setPartnerParams:message];
-            ADJEvent *event = [[ADJEvent alloc] initWithEventToken:adjEventToken];
-            NSDictionary *eventProperties = message.properties;
-            if (eventProperties != nil) {
-                for (NSString *key in [eventProperties allKeys]) {
-                    [event addCallbackParameter:key value:[NSString stringWithFormat:@"%@", [eventProperties objectForKey:key]]];
-                }
-                NSNumber *total = [eventProperties objectForKey:@"revenue"];
-                NSString *currency = [eventProperties objectForKey:@"currency"];
-                if (total != nil && currency != nil) {
-                    [event setRevenue:[total doubleValue] currency:currency];
-                }
-            }
-            NSDictionary *userProperties = message.userProperties;
-            if (userProperties != nil) {
-                for (NSString *key in [userProperties allKeys]) {
-                    [event addCallbackParameter:key value:[NSString stringWithFormat:@"%@", [userProperties objectForKey:key]]];
-                }
-            }
-            [Adjust trackEvent:event];
+        if (adjEventToken == nil) {
+            [RSLogger logDebug:[NSString stringWithFormat:@"Dropping the track event: %@, since corresponding event token is not present.", message.event]];
+            return;
         }
+        [self setPartnerParams:message];
+        ADJEvent *event = [[ADJEvent alloc] initWithEventToken:adjEventToken];
+        NSDictionary *eventProperties = message.properties;
+        if (eventProperties != nil) {
+            for (NSString *key in [eventProperties allKeys]) {
+                [event addCallbackParameter:key value:[NSString stringWithFormat:@"%@", [eventProperties objectForKey:key]]];
+            }
+            NSNumber *total = [eventProperties objectForKey:@"revenue"];
+            NSString *currency = [eventProperties objectForKey:@"currency"];
+            if (total != nil && currency != nil) {
+                [event setRevenue:[total doubleValue] currency:currency];
+            }
+        }
+        NSDictionary *userProperties = message.userProperties;
+        if (userProperties != nil) {
+            for (NSString *key in [userProperties allKeys]) {
+                [event addCallbackParameter:key value:[NSString stringWithFormat:@"%@", [userProperties objectForKey:key]]];
+            }
+        }
+        [Adjust trackEvent:event];
     } else {
         [RSLogger logWarn:@"MessageType is not specified"];
     }
