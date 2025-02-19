@@ -32,16 +32,6 @@
             }
             self.eventMap = tempDict;
         }
-        NSNumber *delayTime = [config objectForKey:@"delay"];
-        double delay = 0;
-        if (delayTime != nil) {
-            delay = [delayTime doubleValue];
-        }
-        if (delay < 0) {
-            delay = 0;
-        } else if (delay > 10) {
-            delay = 10;
-        }
         
         if (apiToken != nil && ![apiToken isEqualToString:@""]) {
             NSString *environment = ADJEnvironmentProduction;
@@ -49,17 +39,29 @@
                 environment = ADJEnvironmentSandbox;
             }
             
-            ADJConfig *adjustConfig = [ADJConfig configWithAppToken:apiToken environment:environment];
-            [adjustConfig setLogLevel:rudderConfig.logLevel >= 4 ? ADJLogLevelVerbose : ADJLogLevelError];
-            [adjustConfig setEventBufferingEnabled:YES];
+            ADJConfig *adjustConfig = [[ADJConfig alloc] initWithAppToken:apiToken environment:environment];
+            [self setLogLevel:rudderConfig.logLevel withAdjustConfig:adjustConfig];
             [adjustConfig setDelegate:self];
-            if (delay > 0) {
-                [adjustConfig setDelayStart:delay];
-            }
-            [Adjust appDidLaunch:adjustConfig];
+            [Adjust initSdk:adjustConfig];
         }
     }
     return self;
+}
+
+- (void)setLogLevel:(int) loglevel withAdjustConfig:(ADJConfig *)adjustConfig {
+    if (loglevel == RSLogLevelVerbose) {
+        [adjustConfig setLogLevel:ADJLogLevelVerbose];
+    } else if (loglevel == RSLogLevelDebug) {
+        [adjustConfig setLogLevel:ADJLogLevelDebug];
+    } else if (loglevel == RSLogLevelInfo) {
+        [adjustConfig setLogLevel:ADJLogLevelInfo];
+    } else if (loglevel == RSLogLevelWarning) {
+        [adjustConfig setLogLevel:ADJLogLevelWarn];
+    } else if (loglevel == RSLogLevelError) {
+        [adjustConfig setLogLevel:ADJLogLevelError];
+    } else {
+        [adjustConfig setLogLevel:ADJLogLevelSuppress];
+    }
 }
 
 - (void)dump:(nonnull RSMessage *)message {
@@ -70,44 +72,49 @@
         [self setPartnerParams:message];
     } else if ([message.type isEqualToString:@"track"]) {
         NSString *adjEventToken = [self.eventMap objectForKey:message.event];
-        if (adjEventToken != nil) {
-            [self setPartnerParams:message];
-            ADJEvent *event = [[ADJEvent alloc] initWithEventToken:adjEventToken];
-            NSDictionary *eventProperties = message.properties;
-            if (eventProperties != nil) {
-                for (NSString *key in [eventProperties allKeys]) {
-                    [event addCallbackParameter:key value:[NSString stringWithFormat:@"%@", [eventProperties objectForKey:key]]];
-                }
-                NSNumber *total = [eventProperties objectForKey:@"revenue"];
-                NSString *currency = [eventProperties objectForKey:@"currency"];
-                if (total != nil && currency != nil) {
-                    [event setRevenue:[total doubleValue] currency:currency];
-                }
-            }
-            NSDictionary *userProperties = message.userProperties;
-            if (userProperties != nil) {
-                for (NSString *key in [userProperties allKeys]) {
-                    [event addCallbackParameter:key value:[NSString stringWithFormat:@"%@", [userProperties objectForKey:key]]];
-                }
-            }
-            [Adjust trackEvent:event];
+        if (adjEventToken == nil) {
+            [RSLogger logDebug:[NSString stringWithFormat:@"Dropping the track event: %@, since corresponding event token is not present.", message.event]];
+            return;
         }
-    } else if ([message.type isEqualToString:@"screen"]) {
-        [RSLogger logWarn:@"MessageType is not supported"];
+        [self setPartnerParams:message];
+        ADJEvent *event = [[ADJEvent alloc] initWithEventToken:adjEventToken];
+        NSDictionary *eventProperties = message.properties;
+        if (eventProperties != nil) {
+            for (NSString *key in [eventProperties allKeys]) {
+                [event addCallbackParameter:key value:[NSString stringWithFormat:@"%@", [eventProperties objectForKey:key]]];
+            }
+            NSNumber *total = [eventProperties objectForKey:@"revenue"];
+            NSString *currency = [eventProperties objectForKey:@"currency"];
+            if (total != nil && currency != nil) {
+                [event setRevenue:[total doubleValue] currency:currency];
+            }
+        }
+        NSDictionary *userProperties = message.userProperties;
+        if (userProperties != nil) {
+            for (NSString *key in [userProperties allKeys]) {
+                [event addCallbackParameter:key value:[NSString stringWithFormat:@"%@", [userProperties objectForKey:key]]];
+            }
+        }
+        [Adjust trackEvent:event];
     } else {
         [RSLogger logWarn:@"MessageType is not specified"];
     }
 }
 
 -(void) setPartnerParams:(RSMessage*) message {
-    [Adjust addSessionPartnerParameter:@"anonymousId" value:message.anonymousId];
+    [Adjust addGlobalPartnerParameter:@"anonymousId" forKey:message.anonymousId];
     if (message.userId != nil && ![message.userId isEqualToString:@""]) {
-        [Adjust addSessionPartnerParameter:@"userId" value:message.userId];
+        [Adjust addGlobalPartnerParameter:@"userId" forKey:message.userId];
     }
 }
 
 - (void)reset {
-    [Adjust resetSessionPartnerParameters];
+    [Adjust removeGlobalPartnerParameters];
 }
+
+- (void)flush { 
+    
+}
+
 
 @end
