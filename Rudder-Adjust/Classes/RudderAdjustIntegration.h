@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <Rudder/Rudder.h>
-#import <Adjust/Adjust.h>
+#import <AdjustSdk/AdjustSdk.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

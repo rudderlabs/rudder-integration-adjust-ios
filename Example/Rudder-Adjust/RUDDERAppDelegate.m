@@ -17,12 +17,13 @@
 {
     // Override point for customization after application launch.
     
-    NSString *writeKey = @"1WC1fQ3nIuFlZcKYCN2zLirPq4D";
-    NSString *endPointUrl = @"https://843fa4c8.ngrok.io";
+    NSString *writeKey = @"<write_key>";
+    NSString *dataPlaneUrl = @"<dataPlane_url>";
     
     RSConfigBuilder *configBuilder = [[RSConfigBuilder alloc] init];
-    [configBuilder withDataPlaneUrl:endPointUrl];
-    [configBuilder withLoglevel:RSLogLevelDebug];
+    [configBuilder withDataPlaneUrl:dataPlaneUrl];
+    [configBuilder withLoglevel:RSLogLevelVerbose];
+    [configBuilder withTrackLifecycleEvens:false];
     [configBuilder withFactory:[RudderAdjustFactory instance]];
     RSClient *rudderClient = [RSClient getInstance:writeKey config:[configBuilder build]];
     
@@ -30,9 +31,15 @@
         NSLog(@"processor started");
         
         usleep(10000000);
-        [rudderClient track:@"level_up"];
-        [rudderClient track:@"daily_rewards_claim"];
-        [rudderClient track:@"revenue"];
+        [rudderClient identify:@"RudderStack iOS user id"];
+        [rudderClient track:@"Track event iOS" properties:@{
+            @"key1": @"value1",
+            @"key2": @123,
+            @"key3": @YES,
+            @"key4": @4.56,
+            @"revenue": @"4.99",
+            @"currency": @"USD"
+        }];
     });
     
     return YES;

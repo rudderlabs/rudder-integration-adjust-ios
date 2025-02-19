@@ -19,7 +19,6 @@ jobs:
           outdated-pod-names: "Adjust"
           directory: "Example"
           title: "fix: update Adjust SDK to the latest version"
-          assignee: "desusai7"
           labels: "outdatedPod"
           color: "FBCA04"
         env:
