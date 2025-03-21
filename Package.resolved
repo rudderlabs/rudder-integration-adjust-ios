@@ -1,0 +1,61 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AdjustSignature",
+        "repositoryURL": "https://github.com/adjust/adjust_signature_sdk.git",
+        "state": {
+          "branch": null,
+          "revision": "93c40d7fa27b709a81adc50e41b400ce4411c7ff",
+          "version": "3.35.2"
+        }
+      },
+      {
+        "package": "RSCrashReporter",
+        "repositoryURL": "https://github.com/rudderlabs/crash-reporter-ios",
+        "state": {
+          "branch": null,
+          "revision": "ee563535b64d9d5feacd0fa243663b2658033a19",
+          "version": "1.0.1"
+        }
+      },
+      {
+        "package": "AdjustSdk",
+        "repositoryURL": "https://github.com/adjust/ios_sdk",
+        "state": {
+          "branch": null,
+          "revision": "1ac4d02d66033411e612571a7b8a7b20b0896e1c",
+          "version": "5.1.0"
+        }
+      },
+      {
+        "package": "MetricsReporter",
+        "repositoryURL": "https://github.com/rudderlabs/metrics-reporter-ios",
+        "state": {
+          "branch": null,
+          "revision": "e307fa37c6c2d2cccf787d73b5b4b5bc3f650435",
+          "version": "2.0.0"
+        }
+      },
+      {
+        "package": "RudderKit",
+        "repositoryURL": "https://github.com/rudderlabs/rudder-ios-kit",
+        "state": {
+          "branch": null,
+          "revision": "8a557a80cc1b0e0bc948c2b17fe0fd3809bcfd61",
+          "version": "1.4.0"
+        }
+      },
+      {
+        "package": "Rudder",
+        "repositoryURL": "https://github.com/rudderlabs/rudder-sdk-ios",
+        "state": {
+          "branch": null,
+          "revision": "2543f659cfc1b772999f932ded1b210f94faeb0c",
+          "version": "1.31.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
