@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 2.1.0 (2025-03-24)
+
+
+### Features
+
+* add SPM support ([#14](https://github.com/rudderlabs/rudder-integration-adjust-ios/issues/14)) ([ac6e356](https://github.com/rudderlabs/rudder-integration-adjust-ios/commit/ac6e35646d71a2ad7158682e5c86d11b0f17eebb))
+
 ## 2.0.0 (2025-02-19)
 
 
