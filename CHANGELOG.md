@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 2.1.1 (2025-07-07)
+
+
+### Bug Fixes
+
+* correct parameter order in setPartnerParams method ([#16](https://github.com/rudderlabs/rudder-integration-adjust-ios/issues/16)) ([a62f334](https://github.com/rudderlabs/rudder-integration-adjust-ios/commit/a62f334a36e744b4e2093d0de3fad6945e087e8d))
+
 ## 2.1.0 (2025-03-24)
 
 
