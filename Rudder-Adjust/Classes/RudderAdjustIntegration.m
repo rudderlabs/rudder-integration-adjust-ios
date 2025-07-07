@@ -102,9 +102,9 @@
 }
 
 -(void) setPartnerParams:(RSMessage*) message {
-    [Adjust addGlobalPartnerParameter:@"anonymousId" forKey:message.anonymousId];
+    [Adjust addGlobalPartnerParameter:message.anonymousId forKey:@"anonymousId"];
     if (message.userId != nil && ![message.userId isEqualToString:@""]) {
-        [Adjust addGlobalPartnerParameter:@"userId" forKey:message.userId];
+        [Adjust addGlobalPartnerParameter:message.userId forKey:@"userId"];
     }
 }
 
