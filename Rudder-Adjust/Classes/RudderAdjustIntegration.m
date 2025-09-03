@@ -41,6 +41,7 @@
             
             ADJConfig *adjustConfig = [[ADJConfig alloc] initWithAppToken:apiToken environment:environment];
             [self setLogLevel:rudderConfig.logLevel withAdjustConfig:adjustConfig];
+            // TODO: Add boolean check to conditionally set Adjust delegate for attribution tracking
             [adjustConfig setDelegate:self];
             [Adjust initSdk:adjustConfig];
         }
@@ -116,5 +117,25 @@
     
 }
 
+#pragma mark - AdjustDelegate
+
+- (void)adjustAttributionChanged:(ADJAttribution *)attribution {
+    NSDictionary *properties = @{
+        @"provider" : @"Adjust",
+        @"trackerToken" : attribution.trackerToken ?: [NSNull null],
+        @"trackerName" : attribution.trackerName ?: [NSNull null],
+        @"campaign" : @{
+            @"source" : attribution.network ?: [NSNull null],
+            @"name" : attribution.campaign ?: [NSNull null],
+            @"content" : attribution.clickLabel ?: [NSNull null],
+            @"adCreative" : attribution.creative ?: [NSNull null],
+            @"adGroup" : attribution.adgroup ?: [NSNull null]
+        }
+    };
+    
+    [RSLogger logDebug:[NSString stringWithFormat:@"Install Attributed event properties: %@", properties]];
+    
+    [self.client track:@"Install Attributed" properties:properties];
+}
 
 @end
