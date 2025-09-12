@@ -2,13 +2,6 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## 2.2.0-beta.1 (2025-09-04)
-
-
-### Features
-
-* add install attribution support ([#18](https://github.com/rudderlabs/rudder-integration-adjust-ios/issues/18)) ([5a94c0b](https://github.com/rudderlabs/rudder-integration-adjust-ios/commit/5a94c0b5389bd001a98e846ea4dc4ba79599651d))
-
 ### 2.1.1 (2025-07-07)
 
 
