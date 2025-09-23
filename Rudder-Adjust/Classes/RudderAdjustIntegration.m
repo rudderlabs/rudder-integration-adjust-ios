@@ -41,8 +41,11 @@
             
             ADJConfig *adjustConfig = [[ADJConfig alloc] initWithAppToken:apiToken environment:environment];
             [self setLogLevel:rudderConfig.logLevel withAdjustConfig:adjustConfig];
-            // TODO: Add boolean check to conditionally set Adjust delegate for attribution tracking
-            [adjustConfig setDelegate:self];
+            // Check if install attribution tracking is enabled via dashboard configuration
+            BOOL enableInstallAttributionTracking = [[config objectForKey:@"enableInstallAttributionTracking"] boolValue];
+            if (enableInstallAttributionTracking) {
+                [adjustConfig setDelegate:self];
+            }
             [Adjust initSdk:adjustConfig];
         }
     }
