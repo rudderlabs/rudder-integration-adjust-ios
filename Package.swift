@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "Rudder-Adjust",
     platforms: [
-        .iOS("12.0"), .tvOS("12.0")
+        .iOS("15.0"), .tvOS("15.0")
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
