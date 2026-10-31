@@ -4,11 +4,12 @@ on:
     branches: ['master']
     types: ['opened', 'reopened', 'synchronize']
 
-permissions:
-  contents: read
+permissions: {}
 
 jobs:
   build:
+    permissions:
+      contents: read # actions/checkout
     name: Code Quality Checks
     runs-on: macOS-latest
     

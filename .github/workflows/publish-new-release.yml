@@ -7,6 +7,8 @@ on:
     types:
       - closed
 
+permissions: {}
+
 jobs:
   release:
     name: Publish new release
