@@ -21,5 +21,5 @@ Rudder is a platform for collecting, storing and routing customer event data to 
   s.source_files = 'Rudder-Adjust/Classes/**/*'
 
   s.dependency 'Rudder', '~> 1.29'
-  s.dependency 'Adjust', '~> 5.1.0'
+  s.dependency 'Adjust', '~> 5.1'
 end
