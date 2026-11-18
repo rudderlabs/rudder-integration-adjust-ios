@@ -14,7 +14,7 @@ let package = Package(
             targets: ["Rudder-Adjust"]),
     ],
     dependencies: [
-        .package(name: "AdjustSdk", url: "https://github.com/adjust/ios_sdk", .exact("5.1.0")),
+        .package(name: "AdjustSdk", url: "https://github.com/adjust/ios_sdk", .upToNextMajor(from: "5.1.0")),
         .package(name: "Rudder", url: "https://github.com/rudderlabs/rudder-sdk-ios", from: "1.0.0"),
     ],
 
